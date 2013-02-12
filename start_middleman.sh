@@ -5,5 +5,4 @@ if [ -z "$VCAP_APP_PORT" ]; then
     env
     exit 1
 fi
-env
 middleman server --port $VCAP_APP_PORT
