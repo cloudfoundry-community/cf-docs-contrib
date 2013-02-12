@@ -36,6 +36,8 @@ For developers pushing applications to Cloud Foundry.
 
   * [MSSQL](docs/using/working-with-services/mssql.html)
 
+  * [Cassandra](docs/using/working-with-services/cassandra.html)
+
   * [Tools & Scripts](docs/using/working-with-services/tooling/index.html)
 
   * [Case studies](docs/using/working-with-services/case-studies/index.html)
