@@ -1,0 +1,10 @@
+---
+applications:
+- name: cf-docs-contrib
+  framework: standalone
+  runtime: ruby19
+  memory: 64M
+  instances: 1
+  url: cf-docs-contrib.${target-base}
+  path: .
+  command: ./start_middleman.sh

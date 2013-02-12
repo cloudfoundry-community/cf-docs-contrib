@@ -1,0 +1,77 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    
+    <!-- Always force latest IE rendering engine or request Chrome Frame -->
+    <meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible">
+    
+    <!-- Use title if it's in the page YAML frontmatter -->
+    <title><%= data.page.title || "Cloud Foundry Contrib Docs" %></title>
+    
+    <%= stylesheet_link_tag "forkit" %>
+    <%= stylesheet_link_tag "style" %>
+    <!--[if IE 8]>
+    <style>
+        body  {background-color:#85bfe4;background-image:none;}
+    </style>
+    <![endif]-->
+  </head>
+  
+  <body class="<%= page_classes %>">
+    <div id="main">
+      <div id="logo">
+        <a href="/">
+           <h1>Cloud Foundry Contrib Documentation</h1>
+         </a>
+      </div>
+      <div id="container">
+         <div id="bg-content">
+          <% unless current_page.url == "/" %>
+            <div class="breadcrumbs">
+              <ul>
+                <li>
+                  <a href="/">Home</a>
+                </li>
+                <%= trail_nav %>
+              </ul>
+            </div>
+            <h2><%= current_page.data.title %></h2>
+          <% end %>
+          <%= yield %>
+         </div>
+       </div>
+    </div>
+    <div id="footer">
+      <p>
+      Copyright &#169;
+      <script>
+        var d = new Date();
+        document.write(d.getFullYear());
+      </script>
+      <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/3.0/deed.en_US"><img alt="Creative Commons License" style="border-width:0" src="http://i.creativecommons.org/l/by-nc-sa/3.0/88x31.png" /></a><br /><span xmlns:dct="http://purl.org/dc/terms/" href="http://purl.org/dc/dcmitype/Text" property="dct:title" rel="dct:type">Cloud Foundry Docs - Contrib</span> by <a xmlns:cc="http://creativecommons.org/ns#" href="http://cf-docs-contrib.cloudfoundry.com" property="cc:attributionName" rel="cc:attributionURL">David Laing</a> is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/3.0/deed.en_US">Creative Commons Attribution-NonCommercial-ShareAlike 3.0 Unported License</a>.<br />Based on a work at <a xmlns:dct="http://purl.org/dc/terms/" href="http://github.com/mrdavidlaing/cf-docs-contrib" rel="dct:source">http://github.com/mrdavidlaing/cf-docs-contrib</a>.
+      </p>
+    </div>
+
+    <!-- The contents (if there's no contents the ribbon acts as a link) -->
+    <div class="forkit-curtain">
+      <div class="close-button"></div>
+
+      <img src="http://placekitten.com/g/200/200">
+      <img src="http://placekitten.com/g/201/200">
+      <img src="http://placekitten.com/g/202/200">
+      <img src="http://placekitten.com/g/204/200">
+
+      <div class="banner">
+        You've had your dose of kitteh for the day, now get <a href="/docs/contributing.html">contributing!</a>.
+        <br/><small>thx <a href="http://placekitten.com/">placekittens.com</a></small>
+      </div>
+    </div>
+
+    <!-- The ribbon -->
+    <a class="forkit" data-text="Fork me on GitHub" data-text-detached="Click me" href="https://github.com/mrdavidlaing/cf-docs-contrib"><img style="position: absolute; top: 0; right: 0; border: 0;" src="https://a248.e.akamai.net/camo.github.com/e6bef7a091f5f3138b8cd40bc3e114258dd68ddf/687474703a2f2f73332e616d617a6f6e6177732e636f6d2f6769746875622f726962626f6e732f666f726b6d655f72696768745f7265645f6161303030302e706e67" alt="Fork me on GitHub"></a>
+
+    <%= javascript_include_tag  "all" %>
+    <%= javascript_include_tag  "forkit" %>
+  </body>
+</html>
