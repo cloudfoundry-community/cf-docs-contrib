@@ -6,7 +6,7 @@ This set of documentation seeks to be an impartial collection of documentation a
 
 > None of the material in this documentation is endorsed or supported by the core Cloud Foundry team.  For supported items please see [the official documentation maintained by the Cloud Foundry core team](http://cloudfoundry.github.com)
 
-[Contributions](docs/contributing.html) are welcomed.  Specifically we're looking for people with an interest in a specific corner of the Cloud Foundry ecosystem to volunteer to keep a page / section of this documentation up to date.
+[Contributions](docs/contributing.html) are welcomed.  We're looking for people with an interest in a specific corner of the Cloud Foundry ecosystem to volunteer to keep a page / section of this documentation up to date.
 
 Below an outline of the kind of content you can expect here:
 
