@@ -9,6 +9,7 @@
     <!-- Use title if it's in the page YAML frontmatter -->
     <title><%= data.page.title || "Cloud Foundry Contrib Docs" %></title>
     
+    <%= stylesheet_link_tag "bootstrap" %>
     <%= stylesheet_link_tag "forkit" %>
     <%= stylesheet_link_tag "style" %>
     <!--[if IE 8]>
@@ -73,5 +74,6 @@
 
     <%= javascript_include_tag  "all" %>
     <%= javascript_include_tag  "forkit" %>
+    <%= javascript_include_tag  "bootstrap" %>
   </body>
 </html>
