@@ -17,14 +17,14 @@ more recent versions in the 10.x series.
 
 #### Generic components:
 
-<table>
+<table class="table table-hover table-striped table-bordered table-condensed">
   <thead>
     <th>Component name</th>
     <th>Cookbook</th>
     <th>Status</th>
     <th>Source</th>
     <th>Notes</th>
-    <th>TravisCI</th>
+    <th width="100px">TravisCI</th>
   </thead>
   <tbody>
     <tr>
@@ -79,14 +79,14 @@ more recent versions in the 10.x series.
 
 #### Runtimes:
 
-<table>
+<table class="table table-hover table-striped table-bordered table-condensed">
   <thead>
     <th>Runtime name</th>
     <th>Cookbook</th>
     <th>State</th>
     <th>Source</th>
     <th>Notes</th>
-    <th>TravisCI</th>
+    <th width="100px">TravisCI</th>
   </thead>
   <tbody>
     <tr>
@@ -109,14 +109,14 @@ more recent versions in the 10.x series.
 
 #### Services:
 
-<table>
+<table class="table table-hover table-striped table-bordered table-condensed">
   <thead>
     <th>Service name</th>
     <th>Cookbook</th>
     <th>State</th>
     <th>Source</th>
     <th>Notes</th>
-    <th>TravisCI</th>
+    <th width="100px">TravisCI</th>
   </thead>
   <tbody>
     <tr>
@@ -166,13 +166,13 @@ more recent versions in the 10.x series.
 These cookbooks are required because the other cookbooks depend on them, but
 they usually have no serviceable parts:
 
-<table>
+<table class="table table-hover table-striped table-bordered table-condensed">
   <thead>
     <th>Cookbook</th>
     <th>Status</th>
     <th>Source</th>
     <th>Notes</th>
-    <th>TravisCI</th>
+    <th width="100px">TravisCI</th>
   </thead>
   <tbody>
     <tr>
