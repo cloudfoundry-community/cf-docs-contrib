@@ -4,6 +4,8 @@ rvm:
 env:
   global:
     - secure: "AurP4QaJAZox2KwKpymG6prbOILjN7ynoSlR7y7csNZI3BXAm/0udxIWaL1Q\nb4f6yqo7osm0ZgxBadTQ9FoqMWnpIg37C7A/2+sMhJpxVAB5GgUAu0i/DMjM\nWEYccNDHsc7M+zFuMPXvhf65D2XRhKDzsRHHGxcWAT+QyGkE77w="
+before_script:
+  - sed -i.bak s/--BUILD_VERSION--/$TRAVIS_BUILD_NUMBER/g source/layouts/layout.erb 
 script: bundle exec middleman build
 after_success:
   - echo "Deploying build $TRAVIS_BUILD_NUMBER to cf-docs-contrib.cloudfoundry.com"
