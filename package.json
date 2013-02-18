@@ -1,0 +1,12 @@
+{
+  "author": "David Laing",
+  "name": "todomvc-continuous-feedback",
+  "version": "0.0.1",
+  "dependencies": {
+  	"connect": "~2.7.2"
+  },
+  "devDependencies": {},
+	"scripts": {
+		"start": "node http-server.js"
+	}
+}
