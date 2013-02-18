@@ -1,0 +1,10 @@
+language: ruby
+rvm:
+  - 1.9.2
+env:
+  - global:
+    - secure: "BR6viSGpaMrKfwMnsqXCbbe0UWrFifTLfZLbvqUA3UiMyg6G6QeS9SPzfnQB\n4x3MftqO3KvXknqwUhk+OgetcXrIYTR0TEMqUnjTWXq4CU+eUIoR89PfiE/+\nQz8EtRXqdnYzD0+4Ed7sgNg/5Ex6QwcJtPXtHWvvGL2528kJ3a4="
+script: bundle exec middleman build
+after_success:
+  - echo "Deploying build $TRAVIS_BUILD_NUMBER to cf-docs-contrib.cloudfoundry.com"
+  - ./deploy_to_cloudfoundry.sh
