@@ -1,6 +1,8 @@
 cf-docs-contrib
 ===============
 
+[![Build Status](https://travis-ci.org/mrdavidlaing/cf-docs-contrib.png?branch=master)](https://travis-ci.org/mrdavidlaing/cf-docs-contrib)
+
 A well lit place for tips, scripts, and tools written by the Cloud Foundry community
 
 ### License
