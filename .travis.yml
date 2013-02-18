@@ -2,7 +2,7 @@ language: ruby
 rvm:
   - 1.9.2
 env:
-  - global:
+  global:
     - secure: "AurP4QaJAZox2KwKpymG6prbOILjN7ynoSlR7y7csNZI3BXAm/0udxIWaL1Q\nb4f6yqo7osm0ZgxBadTQ9FoqMWnpIg37C7A/2+sMhJpxVAB5GgUAu0i/DMjM\nWEYccNDHsc7M+zFuMPXvhf65D2XRhKDzsRHHGxcWAT+QyGkE77w="
 script: bundle exec middleman build
 after_success:
