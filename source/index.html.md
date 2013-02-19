@@ -22,6 +22,8 @@ For developers pushing applications to Cloud Foundry.
 
   * [PHP](docs/using/deploying-apps/php/index.html)
 
+  * [Deploying from Travis CI](docs/using/deploying-apps/deploying-from-travisci.html)
+
   * [Tools & Scripts](docs/using/deploying-apps/tooling/index.html)
 
   * [Deployment case studies](docs/using/deploying-apps/case-studies/index.html)
