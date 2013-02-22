@@ -10,7 +10,6 @@
     <title><%= data.page.title || "Cloud Foundry Contrib Docs" %></title>
     
     <%= stylesheet_link_tag "bootstrap" %>
-    <%= stylesheet_link_tag "forkit" %>
     <%= stylesheet_link_tag "style" %>
     <!--[if IE 8]>
     <style>
@@ -55,29 +54,10 @@
       </p>
     </div>
 
-    <!-- The contents (if there's no contents the ribbon acts as a link) -->
-    <div class="forkit-curtain">
-      <div class="close-button"></div>
-
-      <img src="http://placekitten.com/g/200/200">
-      <img src="http://placekitten.com/g/201/200">
-      <img src="http://placekitten.com/g/202/200">
-      <img src="http://placekitten.com/g/204/200">
-
-      <div class="banner">
-        You've had your dose of kitteh for the day, now get <a href="/docs/contributing.html">contributing!</a>.
-        <br/><small>thx <a href="http://placekitten.com/">placekittens.com</a></small>
-      </div>
-    </div>
-
-    <!-- The ribbon -->
-    <a class="forkit" data-text="Fork me on GitHub" data-text-detached="Click me" href="https://github.com/mrdavidlaing/cf-docs-contrib"><img style="position: absolute; top: 0; right: 0; border: 0;" src="https://a248.e.akamai.net/camo.github.com/e6bef7a091f5f3138b8cd40bc3e114258dd68ddf/687474703a2f2f73332e616d617a6f6e6177732e636f6d2f6769746875622f726962626f6e732f666f726b6d655f72696768745f7265645f6161303030302e706e67" alt="Fork me on GitHub"></a>
-
     <%= javascript_include_tag  "jquery-1.9.1" %>
     <%= javascript_include_tag  "all" %>
-    <%= javascript_include_tag  "forkit" %>
     <%= javascript_include_tag  "bootstrap" %>
-    
+
     <script type="text/javascript">
 
     var _gaq = _gaq || [];
