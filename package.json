@@ -3,7 +3,9 @@
   "name": "todomvc-continuous-feedback",
   "version": "0.0.1",
   "dependencies": {
-  	"connect": "~2.7.2"
+  	"connect": "~2.7.2",
+    "nodealytics": "~0.0.3",
+    "underscore": "~1.4.4"
   },
   "devDependencies": {},
 	"scripts": {

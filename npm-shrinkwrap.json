@@ -3,7 +3,7 @@
   "version": "0.0.1",
   "dependencies": {
     "connect": {
-      "version": "2.7.2",
+      "version": "2.7.3",
       "dependencies": {
         "qs": {
           "version": "0.5.1"
@@ -20,9 +20,6 @@
         "cookie": {
           "version": "0.0.5"
         },
-        "bytes": {
-          "version": "0.1.0"
-        },
         "send": {
           "version": "0.1.0",
           "dependencies": {
@@ -34,6 +31,9 @@
             }
           }
         },
+        "bytes": {
+          "version": "0.2.0"
+        },
         "fresh": {
           "version": "0.1.0"
         },
@@ -44,6 +44,17 @@
           "version": "0.7.2"
         }
       }
+    },
+    "nodealytics": {
+      "version": "0.0.3",
+      "dependencies": {
+        "request": {
+          "version": "2.9.203"
+        }
+      }
+    },
+    "underscore": {
+      "version": "1.4.4"
     }
   }
 }
