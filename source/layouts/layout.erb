@@ -20,6 +20,9 @@
   
   <body class="<%= page_classes %>">
     <div id="main">
+      <div id="search-box">
+          <gcse:searchbox-only></gcse:searchbox-only> 
+      </div>
       <div id="logo">
         <a href="/">
            <h1>Cloud Foundry Contrib Documentation</h1>
@@ -57,6 +60,7 @@
     <%= javascript_include_tag  "jquery-1.9.1" %>
     <%= javascript_include_tag  "all" %>
     <%= javascript_include_tag  "bootstrap" %>
+    <%= javascript_include_tag  "google-custom-search" %>
 
     <script type="text/javascript">
 
@@ -69,7 +73,6 @@
       ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
       var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
     })();
-
   </script>
   </body>
 </html>

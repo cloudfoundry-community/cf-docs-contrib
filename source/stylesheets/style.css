@@ -1,6 +1,17 @@
 /* Requires: normalize.css */
 /* Global Reset & Standards ---------------------- */
-*, *:before, *:after { -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; }
+*, *:before, *:after { -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; } 
+
+#search-box {
+  position:absolute; 
+  margin-left: 900px; 
+  width:280px;
+}
+
+.gsc-search-box * { 
+  -webkit-box-shadow: none; -moz-box-shadow: none; box-shadow: none;
+  -webkit-box-sizing: content-box; -moz-box-sizing: content-box; box-sizing: content-box; 
+}
 
 * {
   margin: 0;
