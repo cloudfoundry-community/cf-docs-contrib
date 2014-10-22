@@ -1,0 +1,1709 @@
+<html>
+<head>
+  <style>
+      body {
+          font-family: "helvetica neue";
+          font-size: 14px;
+      }
+
+      h2 {
+          display: inline;
+      }
+
+      a {
+          text-decoration: none;
+      }
+
+      a:hover {
+          text-decoration: underline;
+      }
+
+      .no-changes {
+          margin: 10px;
+          padding: 10px;
+          background-color: #efe;
+      }
+
+      .commit {
+          margin: 10px;
+          padding: 10px;
+          background-color: #f5f5f5;
+      }
+
+      .commit:nth-child(odd) {
+          background-color: #ddd;
+      }
+
+      .sha {
+          margin-bottom: 5px;
+          font-size: 12px;
+      }
+
+      .sha a {
+          color: #777;
+      }
+
+      .subject {
+          font-weight: bold;
+      }
+
+      .body {
+          padding: 10px;
+          font-size:;
+      }
+
+      .author {
+          font-style: italic;
+      }
+
+      .date {
+          color: #777;
+          font-size: 12px;
+      }
+  </style>
+</head>
+<body>
+<h1>Changes in deploy from origin/deployed-to-prod to 43c823b7e47e3031d72be934d65b11f6741b8e79</h1>
+
+    <details>
+  <summary><h2><a href="https://github.com/cloudfoundry/cf-release/commits/43c823b7e47e3031d72be934d65b11f6741b8e79" target="_blank">.</a>
+    (59 commits)</h2></summary>
+
+  <H3><a href="https://github.com/cloudfoundry/cf-release/commit/origin/deployed-to-prod"
+         target="_blank">origin/d</a>..<a href="https://github.com/cloudfoundry/cf-release/commit/43c823b7e47e3031d72be934d65b11f6741b8e79"
+           target="_blank">43c823b7</a>
+    (<a href="https://github.com/cloudfoundry/cf-release/compare/origin/deployed-to-prod...43c823b7e47e3031d72be934d65b11f6741b8e79" target="_blank">compare</a>)
+ </H3>
+
+  
+      
+          <details class="commit">
+            <summary class="subject">Bump src/cloud_controller_ng</summary>
+            <div class="sha">
+              <a href="https://github.com/cloudfoundry/cf-release/commit/43c823b7e47e3031d72be934d65b11f6741b8e79" target="_blank">43c823b7</a>
+
+            </div>
+            <div class="body">Bump cloudfoundry/cloud_controller_ng:
+  Chris Piraino and Rick Reilly:
+     Bump API Version to 2.16.0 ( Travis created: <a href="https://travis-ci.org/cloudfoundry/cloud_controller_ng/builds/38662058">https://travis-ci.org/cloudfoundry/cloud_controller_ng/builds/38662058</a> )
+     Bump vcap_common to 4.0.2. ( Travis Success: <a href="https://travis-ci.org/cloudfoundry/cloud_controller_ng/builds/38657438">https://travis-ci.org/cloudfoundry/cloud_controller_ng/builds/38657438</a> )
+</div>
+            <div class="author">Chris Piraino and Rick Reilly</div>
+            <div class="date">Tue Oct 21 16:42:49 2014 -0700</div>
+          </details>
+      
+          <details class="commit">
+            <summary class="subject">Bump src/dea_next</summary>
+            <div class="sha">
+              <a href="https://github.com/cloudfoundry/cf-release/commit/
+ab2a75f6e5ba5a7ba4a9413efb790238ef6461c3" target="_blank">
+ab2a75f</a>
+
+            </div>
+            <div class="body">Bump cloudfoundry/dea_ng:
+  Chris Piraino and Rick Reilly:
+     Update vcap_common to 4.0.2. ( Travis Success: <a href="https://travis-ci.org/cloudfoundry/dea_ng/builds/38661083">https://travis-ci.org/cloudfoundry/dea_ng/builds/38661083</a> )
+  James Myers and Serguei Filimonov:
+     Fix invalid cleanup of intermediate temp directory ( Travis Success: <a href="https://travis-ci.org/cloudfoundry/dea_ng/builds/38106303">https://travis-ci.org/cloudfoundry/dea_ng/builds/38106303</a> )
+</div>
+            <div class="author">Chris Piraino and Rick Reilly</div>
+            <div class="date">Tue Oct 21 16:39:35 2014 -0700</div>
+          </details>
+      
+          <details class="commit">
+            <summary class="subject">Bump src/cloud_controller_ng</summary>
+            <div class="sha">
+              <a href="https://github.com/cloudfoundry/cf-release/commit/
+ef2e0d47d665167a8d590d4345bffeb4d1374a6d" target="_blank">
+ef2e0d4</a>
+
+            </div>
+            <div class="body">Bump cloudfoundry/cloud_controller_ng:
+  Ruth Byers and Raina Masand:
+     Update service plan for a single existing service instance ( Travis started: <a href="https://travis-ci.org/cloudfoundry/cloud_controller_ng/builds/38633361">https://travis-ci.org/cloudfoundry/cloud_controller_ng/builds/38633361</a> )
+  Chris Piraino and Luan Santos:
+     Add /v2/apps/:guid/copy_bits endpoint. ( Travis Success: <a href="https://travis-ci.org/cloudfoundry/cloud_controller_ng/builds/38558531">https://travis-ci.org/cloudfoundry/cloud_controller_ng/builds/38558531</a> )
+
+Signed-off-by: Raina Masand <rmasand@pivotal.io>
+</div>
+            <div class="author">Ruth Byers</div>
+            <div class="date">Tue Oct 21 11:16:46 2014 -0700</div>
+          </details>
+      
+          <details class="commit">
+            <summary class="subject">Revert acceptance-tests until loggregator is bumped</summary>
+            <div class="sha">
+              <a href="https://github.com/cloudfoundry/cf-release/commit/
+2ca5b5fa801d4e7e86fc5e4cfd05c88cc955fdd7" target="_blank">
+2ca5b5f</a>
+
+            </div>
+            <div class="body"></div>
+            <div class="author">Serguei Filimonov and Zach Robinson</div>
+            <div class="date">Tue Oct 21 10:24:51 2014 -0700</div>
+          </details>
+      
+          <details class="commit">
+            <summary class="subject">Merge remote-tracking branch 'origin/develop' into develop</summary>
+            <div class="sha">
+              <a href="https://github.com/cloudfoundry/cf-release/commit/
+eccf0e7961bb40bceee5b63debff26a81ab9d8c8" target="_blank">
+eccf0e7</a>
+
+            </div>
+            <div class="body">Conflicts:
+	spec/fixtures/aws/cf-manifest.yml
+	spec/fixtures/openstack/cf-manifest.yml
+	spec/fixtures/vsphere/cf-manifest.yml
+	spec/fixtures/warden/cf-manifest.yml
+</div>
+            <div class="author">Abhijit Hiremagalur and Zach Robinson</div>
+            <div class="date">Mon Oct 20 14:46:19 2014 -0700</div>
+          </details>
+      
+          <details class="commit">
+            <summary class="subject">Bump src/acceptance-tests</summary>
+            <div class="sha">
+              <a href="https://github.com/cloudfoundry/cf-release/commit/
+a0a1221b4dade0eff2cabc36cb9f5555db2f9ac7" target="_blank">
+a0a1221</a>
+
+            </div>
+            <div class="body"></div>
+            <div class="author">John Tuley</div>
+            <div class="date">Wed Oct 15 19:44:21 2014 -0600</div>
+          </details>
+      
+          <details class="commit">
+            <summary class="subject">Bump src/gnatsd</summary>
+            <div class="sha">
+              <a href="https://github.com/cloudfoundry/cf-release/commit/
+62f0ea2749ce29349ba66e89c50d42c7ce6fbcaa" target="_blank">
+62f0ea2</a>
+
+            </div>
+            <div class="body">Bump apcera/gnatsd:
+  Derek Collison:
+     Merge pull request #56 from apcera/fix-coveralls-report ( Travis Success: <a href="https://travis-ci.org/apcera/gnatsd/builds/37360126">https://travis-ci.org/apcera/gnatsd/builds/37360126</a> )
+     Merge pull request #53 from mcuadros/master ( Travis Success: <a href="https://travis-ci.org/apcera/gnatsd/builds/37226560">https://travis-ci.org/apcera/gnatsd/builds/37226560</a> )
+     Make sure to wait long enough ( Travis Unknown )
+  Jonathon Klobucar:
+     Travis file was making the coveralls report think everything was master. ( Travis Success: <a href="https://travis-ci.org/apcera/gnatsd/builds/37357288">https://travis-ci.org/apcera/gnatsd/builds/37357288</a> )
+  Máximo Cuadros Ortiz:
+     fixing http test, disabling keepalive ( Travis Unknown )
+     connz: limit and offset ( Travis Unknown )
+     added subsz and connz extended, and merged with varz ( Travis Unknown )
+     improved connz with subscriptions stats and list of subscriptions by client ( Travis Unknown )
+  Julian Friedman and Zach Robinson:
+     No longer add subscriptions to router clients with no existing connection. ( Travis Unknown )
+</div>
+            <div class="author">Chris Piraino and Luan Santos</div>
+            <div class="date">Wed Oct 15 15:57:27 2014 -0700</div>
+          </details>
+      
+          <details class="commit">
+            <summary class="subject">Add python-pip and awscli to Dockerfile</summary>
+            <div class="sha">
+              <a href="https://github.com/cloudfoundry/cf-release/commit/
+4c23a20d3503d4fbf4ba0b9bdf29c1d29081f0e4" target="_blank">
+4c23a20</a>
+
+            </div>
+            <div class="body">[#77395862]
+</div>
+            <div class="author">Chris Piraino and Luan Santos</div>
+            <div class="date">Wed Oct 15 14:32:49 2014 -0700</div>
+          </details>
+      
+          <details class="commit">
+            <summary class="subject">Bump src/gorouter</summary>
+            <div class="sha">
+              <a href="https://github.com/cloudfoundry/cf-release/commit/
+8aa75685df8cc04bdffb98a274409ea2026f62d2" target="_blank">
+8aa7568</a>
+
+            </div>
+            <div class="body">Bump :
+  James Myers and Serguei Filimonov:
+     Merge remote-tracking branch origin/pr/61
+  liuhewei:
+     Fix the error caused by the callback in loop
+</div>
+            <div class="author">James Myers and Serguei Filimonov</div>
+            <div class="date">Wed Oct 15 13:34:07 2014 -0700</div>
+          </details>
+      
+          <details class="commit">
+            <summary class="subject">Disable SSLv3 termination on HAProxy</summary>
+            <div class="sha">
+              <a href="https://github.com/cloudfoundry/cf-release/commit/
+73e5958b3f45253ceacd3c22d40dc61ba6924ba6" target="_blank">
+73e5958</a>
+
+            </div>
+            <div class="body">aka: No more POODLES
+
+[#80751076]
+</div>
+            <div class="author">Chris Piraino and Luan Santos</div>
+            <div class="date">Wed Oct 15 10:30:52 2014 -0700</div>
+          </details>
+      
+          <details class="commit">
+            <summary class="subject">Adding extra large errand resource pool</summary>
+            <div class="sha">
+              <a href="https://github.com/cloudfoundry/cf-release/commit/
+da7119b251b7c420848fa94bba0bd4aee49c6595" target="_blank">
+da7119b</a>
+
+            </div>
+            <div class="body">- defaults to c3.xlarge on aws environments
+- defaults to the large resource pool on other infrastructures
+
+[#80528196]
+</div>
+            <div class="author">Eric Malm and Luan Santos</div>
+            <div class="date">Tue Oct 14 17:50:00 2014 -0700</div>
+          </details>
+      
+          <details class="commit">
+            <summary class="subject">Bump src/dea_next</summary>
+            <div class="sha">
+              <a href="https://github.com/cloudfoundry/cf-release/commit/
+7f8b9f3e21933af1fd454d7508631f186f5a8139" target="_blank">
+7f8b9f3</a>
+
+            </div>
+            <div class="body">Bump cloudfoundry/dea_ng:
+  Eric Malm and Luan Santos:
+     Move router.start test to its own example ( Travis created: <a href="https://travis-ci.org/cloudfoundry/dea_ng/builds/37996766">https://travis-ci.org/cloudfoundry/dea_ng/builds/37996766</a> )
+  Chris Piraino and James Myers:
+     Write error on failure in directory_server ( Travis Failed: <a href="https://travis-ci.org/cloudfoundry/dea_ng/builds/37991680">https://travis-ci.org/cloudfoundry/dea_ng/builds/37991680</a> )
+</div>
+            <div class="author">Eric Malm and Luan Santos</div>
+            <div class="date">Tue Oct 14 16:47:40 2014 -0700</div>
+          </details>
+      
+          <details class="commit">
+            <summary class="subject">fix tests</summary>
+            <div class="sha">
+              <a href="https://github.com/cloudfoundry/cf-release/commit/
+244c19110f931c2c98ec8cdbd95ce347c3376ce7" target="_blank">
+244c191</a>
+
+            </div>
+            <div class="body">[#79910330]
+</div>
+            <div class="author">Serguei Filimonov and Zach Robinson</div>
+            <div class="date">Tue Oct 14 16:33:48 2014 -0700</div>
+          </details>
+      
+          <details class="commit">
+            <summary class="subject">Revert "Move AWS infrastructure over to newer instance types"</summary>
+            <div class="sha">
+              <a href="https://github.com/cloudfoundry/cf-release/commit/
+b9e7a6c9f764f72f10da1efec4a69a3cda55ed1b" target="_blank">
+b9e7a6c</a>
+
+            </div>
+            <div class="body">This reverts commit eaf8d08876702c43f9eab424bf36226715e9265d.
+</div>
+            <div class="author">Eric Malm and Luan Santos</div>
+            <div class="date">Mon Oct 13 17:22:23 2014 -0700</div>
+          </details>
+      
+          <details class="commit">
+            <summary class="subject">Bump src/dea_next</summary>
+            <div class="sha">
+              <a href="https://github.com/cloudfoundry/cf-release/commit/
+5fa6115d6037a78f67d67d3f51ecb01ba7735ca3" target="_blank">
+5fa6115</a>
+
+            </div>
+            <div class="body">Bump cloudfoundry/dea_ng:
+  Chris Piraino and James Myers:
+     Write error on failure in directory_server ( Travis created: <a href="https://travis-ci.org/cloudfoundry/dea_ng/builds/37991680">https://travis-ci.org/cloudfoundry/dea_ng/builds/37991680</a> )
+</div>
+            <div class="author">Chris Piraino and James Myers</div>
+            <div class="date">Tue Oct 14 15:33:37 2014 -0700</div>
+          </details>
+      
+          <details class="commit">
+            <summary class="subject">Bump src/dea_next</summary>
+            <div class="sha">
+              <a href="https://github.com/cloudfoundry/cf-release/commit/
+b081763741146621ab1bd5b0f79d3864c9d4cfda" target="_blank">
+b081763</a>
+
+            </div>
+            <div class="body">Bump cloudfoundry/dea_ng:
+  Eric Malm and Luan Santos:
+     DEA registers all routes on router.start message ( Travis created: <a href="https://travis-ci.org/cloudfoundry/dea_ng/builds/37990900">https://travis-ci.org/cloudfoundry/dea_ng/builds/37990900</a> )
+  Chris Piraino, Eric Malm, James Myers and Luan Santos:
+     Arrange startup script so warden does not lose graceful shutdown logs ( Travis Success: <a href="https://travis-ci.org/cloudfoundry/dea_ng/builds/37968252">https://travis-ci.org/cloudfoundry/dea_ng/builds/37968252</a> )
+</div>
+            <div class="author">Eric Malm and Luan Santos</div>
+            <div class="date">Tue Oct 14 15:22:50 2014 -0700</div>
+          </details>
+      
+          <details class="commit">
+            <summary class="subject">add comments for CF Docs 'code_snippet' to spec/fixtures/aws/cf-stub.yml</summary>
+            <div class="sha">
+              <a href="https://github.com/cloudfoundry/cf-release/commit/
+3d238ea21880d73efb41c4b837fad09bcde158c5" target="_blank">
+3d238ea</a>
+
+            </div>
+            <div class="body"></div>
+            <div class="author">Max Hufnagel</div>
+            <div class="date">Thu Oct 9 11:33:20 2014 -0700</div>
+          </details>
+      
+          <details class="commit">
+            <summary class="subject">Add manifest template just for CATS errand [#79799664]</summary>
+            <div class="sha">
+              <a href="https://github.com/cloudfoundry/cf-release/commit/
+fdd873fdbed3f7eb96aed91afaede44c653573aa" target="_blank">
+fdd873f</a>
+
+            </div>
+            <div class="body">Signed-off-by: Amit Gupta <agupta@pivotal.io>
+</div>
+            <div class="author">Amit Gupta</div>
+            <div class="date">Mon Oct 13 17:23:59 2014 -0700</div>
+          </details>
+      
+          <details class="commit">
+            <summary class="subject">Update clock and worker job spec files</summary>
+            <div class="sha">
+              <a href="https://github.com/cloudfoundry/cf-release/commit/
+fb2873a79cf20abc13d509b9e045ac4074d0ec1b" target="_blank">
+fb2873a</a>
+
+            </div>
+            <div class="body">[#80217622]
+
+Signed-off-by: Michael Fraenkel <fraenkel@us.ibm.com>
+</div>
+            <div class="author">Matthew Sykes</div>
+            <div class="date">Mon Oct 13 12:11:55 2014 -0400</div>
+          </details>
+      
+          <details class="commit">
+            <summary class="subject">Bump src/cloud_controller_ng</summary>
+            <div class="sha">
+              <a href="https://github.com/cloudfoundry/cf-release/commit/
+ee5554be2578482ac69da16dcae21145de852c3c" target="_blank">
+ee5554b</a>
+
+            </div>
+            <div class="body">Bump cloudfoundry/cloud_controller_ng:
+  Ted Young:
+     Internal endpoints use InternalApi auth instead of BulkApi ( Travis started: <a href="https://travis-ci.org/cloudfoundry/cloud_controller_ng/builds/37836213">https://travis-ci.org/cloudfoundry/cloud_controller_ng/builds/37836213</a> )
+  Matthew Sykes:
+     Use http for diego staging responses ( Travis Unknown )
+
+Signed-off-by: Michael Fraenkel <fraenkel@us.ibm.com>
+</div>
+            <div class="author">Matthew Sykes</div>
+            <div class="date">Mon Oct 13 11:03:08 2014 -0400</div>
+          </details>
+      
+          <details class="commit">
+            <summary class="subject">Add values for cc.uaa_skip_ssl_validation property to manifest specs</summary>
+            <div class="sha">
+              <a href="https://github.com/cloudfoundry/cf-release/commit/
+c1dd1bdc2c1cbb54dd1d7fd61006d9209c3ac69b" target="_blank">
+c1dd1bd</a>
+
+            </div>
+            <div class="body">[#70710962]
+</div>
+            <div class="author">Eric Malm and Luan Santos</div>
+            <div class="date">Fri Oct 10 17:03:33 2014 -0700</div>
+          </details>
+      
+          <details class="commit">
+            <summary class="subject">Bump src/cloud_controller_ng</summary>
+            <div class="sha">
+              <a href="https://github.com/cloudfoundry/cf-release/commit/
+9ad1b6ed4879ec5438d37bf45245855ea52d3a6f" target="_blank">
+9ad1b6e</a>
+
+            </div>
+            <div class="body">Bump cloudfoundry/cloud_controller_ng:
+  Eric Malm and Luan Santos:
+     Change Gemfile to use github: for the github hosted gems ( Travis started: <a href="https://travis-ci.org/cloudfoundry/cloud_controller_ng/builds/37643206">https://travis-ci.org/cloudfoundry/cloud_controller_ng/builds/37643206</a> )
+  Luan Santos and Mike Dalessio:
+     Downgrade pg and newrelic_rpm ( Travis Success: <a href="https://travis-ci.org/cloudfoundry/cloud_controller_ng/builds/37620023">https://travis-ci.org/cloudfoundry/cloud_controller_ng/builds/37620023</a> )
+</div>
+            <div class="author">Eric Malm and Luan Santos</div>
+            <div class="date">Fri Oct 10 14:20:40 2014 -0700</div>
+          </details>
+      
+          <details class="commit">
+            <summary class="subject">nginx_newrelic_plugin uses ruby 2.1.3</summary>
+            <div class="sha">
+              <a href="https://github.com/cloudfoundry/cf-release/commit/
+2996aa522c03d4ee06a9a7548c94ef02dce8d168" target="_blank">
+2996aa5</a>
+
+            </div>
+            <div class="body">[#70710962]
+</div>
+            <div class="author">Eric Malm and Luan Santos</div>
+            <div class="date">Fri Oct 10 14:18:46 2014 -0700</div>
+          </details>
+      
+          <details class="commit">
+            <summary class="subject">Add ruby-2.1.3 package and include it with cloud_controller</summary>
+            <div class="sha">
+              <a href="https://github.com/cloudfoundry/cf-release/commit/
+9fe94c624bb99ff00387b1e52c63e3ee5215cc04" target="_blank">
+9fe94c6</a>
+
+            </div>
+            <div class="body">[#70710962]
+</div>
+            <div class="author">Eric Malm and Zach Robinson</div>
+            <div class="date">Thu Oct 9 16:08:38 2014 -0700</div>
+          </details>
+      
+          <details class="commit">
+            <summary class="subject">use ruby 2.1 for newrelic_nginx_agent</summary>
+            <div class="sha">
+              <a href="https://github.com/cloudfoundry/cf-release/commit/
+1e343706a2ac724325ab00f1f24aed12fc1c9e19" target="_blank">
+1e34370</a>
+
+            </div>
+            <div class="body">- cloud_controller jobs include both the ruby and ruby-2.1 packages
+- syslog_aggregator uses the ruby package and can be upgraded separately later
+[#70710962]
+</div>
+            <div class="author">Luan Santos and Alex Stupakov</div>
+            <div class="date">Tue Sep 23 15:32:31 2014 -0700</div>
+          </details>
+      
+          <details class="commit">
+            <summary class="subject">Revert "Revert "Ruby 2.1 packages and specs.""</summary>
+            <div class="sha">
+              <a href="https://github.com/cloudfoundry/cf-release/commit/
+9868db17c42719edec056edc440cdde47f218319" target="_blank">
+9868db1</a>
+
+            </div>
+            <div class="body">This reverts commit ffb1f37dedaf1744fb3a95deae548874f93f11e8.
+</div>
+            <div class="author">Alex Stupakov and James Myers</div>
+            <div class="date">Mon Sep 22 11:02:28 2014 -0700</div>
+          </details>
+      
+          <details class="commit">
+            <summary class="subject">Revert "Revert "Allow skipping SSL validation for uaa-lib connections""</summary>
+            <div class="sha">
+              <a href="https://github.com/cloudfoundry/cf-release/commit/
+d0f8adf817570d0801ad2e7846721b37b99440d9" target="_blank">
+d0f8adf</a>
+
+            </div>
+            <div class="body">This reverts commit fce4de624aeebf4eedd2f9dd5a580cf70443737e.
+</div>
+            <div class="author">Alex Stupakov and James Myers</div>
+            <div class="date">Mon Sep 22 11:02:08 2014 -0700</div>
+          </details>
+      
+          <details class="commit">
+            <summary class="subject">network is required but static ips are not</summary>
+            <div class="sha">
+              <a href="https://github.com/cloudfoundry/cf-release/commit/
+09f517b0c382be36567f2b6b108f7b2a039e21f0" target="_blank">
+09f517b</a>
+
+            </div>
+            <div class="body">Signed-off-by: Joseph Rodriguez <jrodriguez@pivotal.io>
+</div>
+            <div class="author">Mike Gehard</div>
+            <div class="date">Wed Oct 1 08:55:20 2014 -0600</div>
+          </details>
+      
+          <details class="commit">
+            <summary class="subject">Add ability for doppler to act as UAA client</summary>
+            <div class="sha">
+              <a href="https://github.com/cloudfoundry/cf-release/commit/
+d48139e2fbd73721a5fced6079e31f75f699200d" target="_blank">
+d48139e</a>
+
+            </div>
+            <div class="body">Signed-off-by: Joseph Rodriguez <jrodriguez@pivotal.io>
+</div>
+            <div class="author">Mike Gehard</div>
+            <div class="date">Tue Sep 30 15:16:26 2014 -0600</div>
+          </details>
+      
+          <details class="commit">
+            <summary class="subject">no longer use static IPs for loggregator</summary>
+            <div class="sha">
+              <a href="https://github.com/cloudfoundry/cf-release/commit/
+7f7f448d55db34bbd9859e77194beaf740be626e" target="_blank">
+7f7f448</a>
+
+            </div>
+            <div class="body">[#78131104]
+
+Signed-off-by: Andrew Poydence <apoydence@pivotal.io>
+</div>
+            <div class="author">Johannes Petzold</div>
+            <div class="date">Fri Sep 26 14:55:21 2014 -0600</div>
+          </details>
+      
+          <details class="commit">
+            <summary class="subject">Fix manifest generation specs</summary>
+            <div class="sha">
+              <a href="https://github.com/cloudfoundry/cf-release/commit/
+c47fa152abe97e6f7d07f74c2833d5511dc325bb" target="_blank">
+c47fa15</a>
+
+            </div>
+            <div class="body"></div>
+            <div class="author">Luan Santos and James Myers</div>
+            <div class="date">Thu Oct 9 22:48:38 2014 +0000</div>
+          </details>
+      
+          <details class="commit">
+            <summary class="subject">Use bosh properties to find out smoke_tests ip</summary>
+            <div class="sha">
+              <a href="https://github.com/cloudfoundry/cf-release/commit/
+67a0bf994e8ca42fcec8c8c477b72113c626feae" target="_blank">
+67a0bf9</a>
+
+            </div>
+            <div class="body">[#80342802]
+</div>
+            <div class="author">Luan Santos and James Myers</div>
+            <div class="date">Thu Oct 9 19:13:33 2014 +0000</div>
+          </details>
+      
+          <details class="commit">
+            <summary class="subject">Bump src/cloud_controller_ng</summary>
+            <div class="sha">
+              <a href="https://github.com/cloudfoundry/cf-release/commit/
+8f6fbb9b0df5261f51c4b031f3e7ba371a619983" target="_blank">
+8f6fbb9</a>
+
+            </div>
+            <div class="body">Bump cloudfoundry/cloud_controller_ng:
+  Eric Malm:
+     Merge remote-tracking branch origin/pr/303 ( Travis Unknown )
+  Mike Gehard:
+     Doppler now does the syslog stuff ( Travis Unknown )
+</div>
+            <div class="author">Eric Malm</div>
+            <div class="date">Thu Oct 9 08:58:13 2014 -0700</div>
+          </details>
+      
+          <details class="commit">
+            <summary class="subject">Bump src/smoke-tests</summary>
+            <div class="sha">
+              <a href="https://github.com/cloudfoundry/cf-release/commit/
+5e01c901833d4debbcbc7a445f823c91664c5fa3" target="_blank">
+5e01c90</a>
+
+            </div>
+            <div class="body">Bump :
+  Chris Piraino and Luan Santos:
+     Change spacing and fix erroneous nodes number on README
+</div>
+            <div class="author">Chris Piraino and Luan Santos</div>
+            <div class="date">Wed Oct 8 17:12:09 2014 -0700</div>
+          </details>
+      
+          <details class="commit">
+            <summary class="subject">Bump src/cloud_controller_ng</summary>
+            <div class="sha">
+              <a href="https://github.com/cloudfoundry/cf-release/commit/
+0b6e80dc5e870dbbf610cd2e2ef651c48824a2f1" target="_blank">
+0b6e80d</a>
+
+            </div>
+            <div class="body">Bump cloudfoundry/cloud_controller_ng:
+  Chris Piraino and Luan Santos:
+     Fix race condition when figuring out positions for buildpacks. ( Travis created: <a href="https://travis-ci.org/cloudfoundry/cloud_controller_ng/builds/37455290">https://travis-ci.org/cloudfoundry/cloud_controller_ng/builds/37455290</a> )
+</div>
+            <div class="author">Chris Piraino and Luan Santos</div>
+            <div class="date">Wed Oct 8 17:10:01 2014 -0700</div>
+          </details>
+      
+          <details class="commit">
+            <summary class="subject">Bump src/cloud_controller_ng</summary>
+            <div class="sha">
+              <a href="https://github.com/cloudfoundry/cf-release/commit/
+b934bd97c45cfffb89458d480b9b959060682d9a" target="_blank">
+b934bd9</a>
+
+            </div>
+            <div class="body">Bump cloudfoundry/cloud_controller_ng:
+  James Myers and Zach Robinson:
+     Add drain for restarts due to memory usage ( Travis started: <a href="https://travis-ci.org/cloudfoundry/cloud_controller_ng/builds/37451802">https://travis-ci.org/cloudfoundry/cloud_controller_ng/builds/37451802</a> )
+</div>
+            <div class="author">James Myers and Zach Robinson</div>
+            <div class="date">Wed Oct 8 16:12:57 2014 -0700</div>
+          </details>
+      
+          <details class="commit">
+            <summary class="subject">Remove syslog_forwarder.conf.erb from CC jobs</summary>
+            <div class="sha">
+              <a href="https://github.com/cloudfoundry/cf-release/commit/
+bf4979dd41d0791f6145eb6a4d05e55a8f12738c" target="_blank">
+bf4979d</a>
+
+            </div>
+            <div class="body">* Remove symlinks to template in cloud_controller_ng submodule
+* Remove from CC job specs
+* metron_agent job should be co-located with CC jobs to provide syslog
+  forwarding configuration now
+* CC ctl scripts will generate an error log line complaining about not finding
+  their copy of the evaluated template, but they will still function
+  correctly
+* ctl script error to be resolved by changes in [CC PR #303](<a href="https://github.com/cloudfoundry/cloud_controller_ng/pull/303">https://github.com/cloudfoundry/cloud_controller_ng/pull/303</a>)
+
+[#80253108]
+</div>
+            <div class="author">Eric Malm</div>
+            <div class="date">Wed Oct 8 15:22:01 2014 -0700</div>
+          </details>
+      
+          <details class="commit">
+            <summary class="subject">Bump src/cloud_controller_ng</summary>
+            <div class="sha">
+              <a href="https://github.com/cloudfoundry/cf-release/commit/
+009c594b2636633f3c12823b15b65a16a8139367" target="_blank">
+009c594</a>
+
+            </div>
+            <div class="body">Bump cloudfoundry/cloud_controller_ng:
+  Ted Young:
+     Updated valid deigo config options ( Travis Unknown )
+     bulk endpoints should respect diego cc configuration ( Travis Unknown )
+</div>
+            <div class="author">Ted Young</div>
+            <div class="date">Tue Oct 7 15:31:25 2014 -0700</div>
+          </details>
+      
+          <details class="commit">
+            <summary class="subject">Upgrading ruby buildpack to v1.1.2</summary>
+            <div class="sha">
+              <a href="https://github.com/cloudfoundry/cf-release/commit/
+d03e51ebe0ae1b3c8f25b52274b3e681f4c56049" target="_blank">
+d03e51e</a>
+
+            </div>
+            <div class="body"></div>
+            <div class="author">Builpack CI</div>
+            <div class="date">Tue Oct 7 16:41:24 2014 -0400</div>
+          </details>
+      
+          <details class="commit">
+            <summary class="subject">Revert "Bump The Loggregator"</summary>
+            <div class="sha">
+              <a href="https://github.com/cloudfoundry/cf-release/commit/
+c85ef3dd41760816de330abc734891a7a0c63eba" target="_blank">
+c85ef3d</a>
+
+            </div>
+            <div class="body">This reverts commit 77aedf33435f031d2ff193bdc4ee1768df9aa98f.
+</div>
+            <div class="author">Chris Piraino and Luan Santos</div>
+            <div class="date">Mon Oct 20 11:24:56 2014 -0700</div>
+          </details>
+      
+          <details class="commit">
+            <summary class="subject">Bump src/acceptance-tests</summary>
+            <div class="sha">
+              <a href="https://github.com/cloudfoundry/cf-release/commit/
+264ef39fb12f52fbcacb62e6f7e7d6eb9f86754e" target="_blank">
+264ef39</a>
+
+            </div>
+            <div class="body">Bump :
+  Alex Stupakov:
+     Add test for loggregator firehose [#80870620]
+
+Signed-off-by: Alex Stupakov <astupakov@pivotal.io>
+</div>
+            <div class="author">John Tuley</div>
+            <div class="date">Mon Oct 20 08:17:21 2014 -0600</div>
+          </details>
+      
+          <details class="commit">
+            <summary class="subject">Bump src/cloud_controller_ng</summary>
+            <div class="sha">
+              <a href="https://github.com/cloudfoundry/cf-release/commit/
+9167ea04e79a286b193f83b88aafddeb2a59e376" target="_blank">
+9167ea0</a>
+
+            </div>
+            <div class="body">Bump cloudfoundry/cloud_controller_ng:
+  Chris Conway and Zach Robinson:
+     Added VCAP_APPLICATION environment to the /v2/apps/:guid/env endpoint. ( Travis started: <a href="https://travis-ci.org/cloudfoundry/cloud_controller_ng/builds/38314637">https://travis-ci.org/cloudfoundry/cloud_controller_ng/builds/38314637</a> )
+</div>
+            <div class="author">Chris Conway and Zach Robinson</div>
+            <div class="date">Fri Oct 17 15:52:56 2014 -0700</div>
+          </details>
+      
+          <details class="commit">
+            <summary class="subject">Replace uaa.connection_opts with skip_cert_verify</summary>
+            <div class="sha">
+              <a href="https://github.com/cloudfoundry/cf-release/commit/
+83624ed776d025e3421bccf9dabc93dec678591f" target="_blank">
+83624ed</a>
+
+            </div>
+            <div class="body">Bump src/cloud_controller_ng
+
+Bump cloudfoundry/cloud_controller_ng:
+  James Myers and Zach Robinson:
+     Use skip_cert_verify to determine how to connect for all UAA connections ( Travis started: <a href="https://travis-ci.org/cloudfoundry/cloud_controller_ng/builds/38284228">https://travis-ci.org/cloudfoundry/cloud_controller_ng/builds/38284228</a> )
+
+[#80878662]
+</div>
+            <div class="author">James Myers and Zach Robinson</div>
+            <div class="date">Fri Oct 17 10:33:24 2014 -0700</div>
+          </details>
+      
+          <details class="commit">
+            <summary class="subject">Bump The Loggregator</summary>
+            <div class="sha">
+              <a href="https://github.com/cloudfoundry/cf-release/commit/
+77aedf33435f031d2ff193bdc4ee1768df9aa98f" target="_blank">
+77aedf3</a>
+
+            </div>
+            <div class="body">Signed-off-by: Georg Apitz <gapitz@pivotal.io>
+</div>
+            <div class="author">Joseph Rodriguez</div>
+            <div class="date">Fri Oct 17 09:03:57 2014 -0600</div>
+          </details>
+      
+          <details class="commit">
+            <summary class="subject">Bump src/cloud_controller_ng</summary>
+            <div class="sha">
+              <a href="https://github.com/cloudfoundry/cf-release/commit/
+0ca96fe7e64d4448488b1f1079cd071f2c469230" target="_blank">
+0ca96fe</a>
+
+            </div>
+            <div class="body">Bump cloudfoundry/cloud_controller_ng:
+  Matthew Sykes:
+     Do not change version when routes change (Diego) ( Travis Unknown )
+
+Signed-off-by: Matthew Sykes <matthew.sykes@gmail.com>
+</div>
+            <div class="author">Michael Fraenkel</div>
+            <div class="date">Thu Oct 16 16:43:12 2014 -0400</div>
+          </details>
+      
+          <details class="commit">
+            <summary class="subject">Merging deployed version v190 to develop branch</summary>
+            <div class="sha">
+              <a href="https://github.com/cloudfoundry/cf-release/commit/
+a91ac0cf0f5b1f66e9f063fb23b8f2f2ed3f3052" target="_blank">
+a91ac0c</a>
+
+            </div>
+            <div class="body"></div>
+            <div class="author">Chris Adams</div>
+            <div class="date">Thu Oct 16 19:18:02 2014 +0000</div>
+          </details>
+      
+          <details class="commit">
+            <summary class="subject">add blobs for release v190</summary>
+            <div class="sha">
+              <a href="https://github.com/cloudfoundry/cf-release/commit/
+4eb4b4abc515759bf4a48187f33c0b1b6d704806" target="_blank">
+4eb4b4a</a>
+
+            </div>
+            <div class="body"></div>
+            <div class="author">Chris Adams</div>
+            <div class="date">Thu Oct 16 17:31:14 2014 +0000</div>
+          </details>
+      
+          <details class="commit">
+            <summary class="subject">Add doppler.firehose admin scope for warden stub and to specs</summary>
+            <div class="sha">
+              <a href="https://github.com/cloudfoundry/cf-release/commit/
+47051ed644257d1f35a760105bbd82cbe4bd4ca3" target="_blank">
+47051ed</a>
+
+            </div>
+            <div class="body">[#80129308]
+</div>
+            <div class="author">Joseph Rodriguez</div>
+            <div class="date">Wed Oct 15 16:39:56 2014 -0600</div>
+          </details>
+      
+          <details class="commit">
+            <summary class="subject">Bump src/acceptance-tests</summary>
+            <div class="sha">
+              <a href="https://github.com/cloudfoundry/cf-release/commit/
+c4afdf6f4cb3dc725c61f700a182696fe8ddb390" target="_blank">
+c4afdf6</a>
+
+            </div>
+            <div class="body"></div>
+            <div class="author">John Tuley</div>
+            <div class="date">Wed Oct 15 19:44:21 2014 -0600</div>
+          </details>
+      
+          <details class="commit">
+            <summary class="subject">Bump src/gnatsd</summary>
+            <div class="sha">
+              <a href="https://github.com/cloudfoundry/cf-release/commit/
+a62cff29f18f02b1cf896fc8ba96c60fa2f8fcda" target="_blank">
+a62cff2</a>
+
+            </div>
+            <div class="body">Bump apcera/gnatsd:
+  Derek Collison:
+     Merge pull request #56 from apcera/fix-coveralls-report ( Travis Success: <a href="https://travis-ci.org/apcera/gnatsd/builds/37360126">https://travis-ci.org/apcera/gnatsd/builds/37360126</a> )
+     Merge pull request #53 from mcuadros/master ( Travis Success: <a href="https://travis-ci.org/apcera/gnatsd/builds/37226560">https://travis-ci.org/apcera/gnatsd/builds/37226560</a> )
+     Make sure to wait long enough ( Travis Unknown )
+  Jonathon Klobucar:
+     Travis file was making the coveralls report think everything was master. ( Travis Success: <a href="https://travis-ci.org/apcera/gnatsd/builds/37357288">https://travis-ci.org/apcera/gnatsd/builds/37357288</a> )
+  Máximo Cuadros Ortiz:
+     fixing http test, disabling keepalive ( Travis Unknown )
+     connz: limit and offset ( Travis Unknown )
+     added subsz and connz extended, and merged with varz ( Travis Unknown )
+     improved connz with subscriptions stats and list of subscriptions by client ( Travis Unknown )
+  Julian Friedman and Zach Robinson:
+     No longer add subscriptions to router clients with no existing connection. ( Travis Unknown )
+</div>
+            <div class="author">Chris Piraino and Luan Santos</div>
+            <div class="date">Wed Oct 15 15:57:27 2014 -0700</div>
+          </details>
+      
+          <details class="commit">
+            <summary class="subject">Add python-pip and awscli to Dockerfile</summary>
+            <div class="sha">
+              <a href="https://github.com/cloudfoundry/cf-release/commit/
+d03481be1299fff4503f02cbb6ab9652e0012585" target="_blank">
+d03481b</a>
+
+            </div>
+            <div class="body">[#77395862]
+</div>
+            <div class="author">Chris Piraino and Luan Santos</div>
+            <div class="date">Wed Oct 15 14:32:49 2014 -0700</div>
+          </details>
+      
+          <details class="commit">
+            <summary class="subject">Bump src/gorouter</summary>
+            <div class="sha">
+              <a href="https://github.com/cloudfoundry/cf-release/commit/
+eb6750b1f7315fbc835bdbb3604b4fd97bca55a6" target="_blank">
+eb6750b</a>
+
+            </div>
+            <div class="body">Bump :
+  James Myers and Serguei Filimonov:
+     Merge remote-tracking branch origin/pr/61
+  liuhewei:
+     Fix the error caused by the callback in loop
+</div>
+            <div class="author">James Myers and Serguei Filimonov</div>
+            <div class="date">Wed Oct 15 13:34:07 2014 -0700</div>
+          </details>
+      
+          <details class="commit">
+            <summary class="subject">Disable SSLv3 termination on HAProxy</summary>
+            <div class="sha">
+              <a href="https://github.com/cloudfoundry/cf-release/commit/
+3b8bd74da73fc7b25c190eb3d835e5d0d6e4c996" target="_blank">
+3b8bd74</a>
+
+            </div>
+            <div class="body">aka: No more POODLES
+
+[#80751076]
+</div>
+            <div class="author">Chris Piraino and Luan Santos</div>
+            <div class="date">Wed Oct 15 10:30:52 2014 -0700</div>
+          </details>
+      
+          <details class="commit">
+            <summary class="subject">Adding extra large errand resource pool</summary>
+            <div class="sha">
+              <a href="https://github.com/cloudfoundry/cf-release/commit/
+bc3ed37086f75e77a1a0f652fbfb7d6fae59e112" target="_blank">
+bc3ed37</a>
+
+            </div>
+            <div class="body">- defaults to c3.xlarge on aws environments
+- defaults to the large resource pool on other infrastructures
+
+[#80528196]
+</div>
+            <div class="author">Eric Malm and Luan Santos</div>
+            <div class="date">Tue Oct 14 17:50:00 2014 -0700</div>
+          </details>
+      
+          <details class="commit">
+            <summary class="subject">Bump src/dea_next</summary>
+            <div class="sha">
+              <a href="https://github.com/cloudfoundry/cf-release/commit/
+4d25758bf1733a45238b00ebbafa45b2fed9a643" target="_blank">
+4d25758</a>
+
+            </div>
+            <div class="body">Bump cloudfoundry/dea_ng:
+  Eric Malm and Luan Santos:
+     Move router.start test to its own example ( Travis created: <a href="https://travis-ci.org/cloudfoundry/dea_ng/builds/37996766">https://travis-ci.org/cloudfoundry/dea_ng/builds/37996766</a> )
+  Chris Piraino and James Myers:
+     Write error on failure in directory_server ( Travis Failed: <a href="https://travis-ci.org/cloudfoundry/dea_ng/builds/37991680">https://travis-ci.org/cloudfoundry/dea_ng/builds/37991680</a> )
+</div>
+            <div class="author">Eric Malm and Luan Santos</div>
+            <div class="date">Tue Oct 14 16:47:40 2014 -0700</div>
+          </details>
+      
+          <details class="commit">
+            <summary class="subject">fix tests</summary>
+            <div class="sha">
+              <a href="https://github.com/cloudfoundry/cf-release/commit/
+a8c30f593417572b579b7a87f05ea0fb08dc19ff" target="_blank">
+a8c30f5</a>
+
+            </div>
+            <div class="body">[#79910330]
+</div>
+            <div class="author">Serguei Filimonov and Zach Robinson</div>
+            <div class="date">Tue Oct 14 16:33:48 2014 -0700</div>
+          </details>
+      
+          <details class="commit">
+            <summary class="subject">Revert "Move AWS infrastructure over to newer instance types"</summary>
+            <div class="sha">
+              <a href="https://github.com/cloudfoundry/cf-release/commit/
+89d189d171c429fdc0e41c741f992e4caf0d79d2" target="_blank">
+89d189d</a>
+
+            </div>
+            <div class="body">This reverts commit eaf8d08876702c43f9eab424bf36226715e9265d.
+</div>
+            <div class="author">Eric Malm and Luan Santos</div>
+            <div class="date">Mon Oct 13 17:22:23 2014 -0700</div>
+          </details>
+      
+          <details class="commit">
+            <summary class="subject">Bump src/dea_next</summary>
+            <div class="sha">
+              <a href="https://github.com/cloudfoundry/cf-release/commit/
+0529e386c4e5ea4ed91f766d52de310209ed8f2b" target="_blank">
+0529e38</a>
+
+            </div>
+            <div class="body">Bump cloudfoundry/dea_ng:
+  Chris Piraino and James Myers:
+     Write error on failure in directory_server ( Travis created: <a href="https://travis-ci.org/cloudfoundry/dea_ng/builds/37991680">https://travis-ci.org/cloudfoundry/dea_ng/builds/37991680</a> )
+</div>
+            <div class="author">Chris Piraino and James Myers</div>
+            <div class="date">Tue Oct 14 15:33:37 2014 -0700</div>
+          </details>
+      
+          <details class="commit">
+            <summary class="subject">Bump src/dea_next</summary>
+            <div class="sha">
+              <a href="https://github.com/cloudfoundry/cf-release/commit/
+196815c1f6ccfcdcc2e0e2b7fe37f3664b34e972" target="_blank">
+196815c</a>
+
+            </div>
+            <div class="body">Bump cloudfoundry/dea_ng:
+  Eric Malm and Luan Santos:
+     DEA registers all routes on router.start message ( Travis created: <a href="https://travis-ci.org/cloudfoundry/dea_ng/builds/37990900">https://travis-ci.org/cloudfoundry/dea_ng/builds/37990900</a> )
+  Chris Piraino, Eric Malm, James Myers and Luan Santos:
+     Arrange startup script so warden does not lose graceful shutdown logs ( Travis Success: <a href="https://travis-ci.org/cloudfoundry/dea_ng/builds/37968252">https://travis-ci.org/cloudfoundry/dea_ng/builds/37968252</a> )
+</div>
+            <div class="author">Eric Malm and Luan Santos</div>
+            <div class="date">Tue Oct 14 15:22:50 2014 -0700</div>
+          </details>
+      
+  
+</details>
+
+
+    <details>
+  <summary><h2><a href="https://github.com/cloudfoundry/dea_ng/commits/cb8ff3c4f9d0560ada42c360d70b585b6b727d15" target="_blank">src/dea_next</a>
+    (6 commits)</h2></summary>
+
+  <H3><a href="https://github.com/cloudfoundry/dea_ng/commit/bbddaa1fc6c671797b168e377fa6046a3000ff8d"
+         target="_blank">bbddaa1f</a>..<a href="https://github.com/cloudfoundry/dea_ng/commit/cb8ff3c4f9d0560ada42c360d70b585b6b727d15"
+           target="_blank">cb8ff3c4</a>
+    (<a href="https://github.com/cloudfoundry/dea_ng/compare/bbddaa1fc6c671797b168e377fa6046a3000ff8d...cb8ff3c4f9d0560ada42c360d70b585b6b727d15" target="_blank">compare</a>)
+ </H3>
+
+  
+      
+          <details class="commit">
+            <summary class="subject">Update vcap_common to 4.0.2.</summary>
+            <div class="sha">
+              <a href="https://github.com/cloudfoundry/dea_ng/commit/cb8ff3c4f9d0560ada42c360d70b585b6b727d15" target="_blank">cb8ff3c4</a>
+
+            </div>
+            <div class="body">- Point vcap_common and steno gems to RubyGems instead of git
+repositories.
+
+[#80456142]
+</div>
+            <div class="author">Chris Piraino and Rick Reilly</div>
+            <div class="date">Tue Oct 21 16:03:16 2014 -0700</div>
+          </details>
+      
+          <details class="commit">
+            <summary class="subject">Fix invalid cleanup of intermediate temp directory</summary>
+            <div class="sha">
+              <a href="https://github.com/cloudfoundry/dea_ng/commit/
+49fd70d5fc7b829bd887e173b770f9c590d9e690" target="_blank">
+49fd70d</a>
+
+            </div>
+            <div class="body">* Corresponding specs have been improved to actually test
+  unzipping/moving of real zip files.
+
+[#80363654]
+</div>
+            <div class="author">James Myers and Serguei Filimonov</div>
+            <div class="date">Wed Oct 15 17:05:51 2014 -0700</div>
+          </details>
+      
+          <details class="commit">
+            <summary class="subject">Move router.start test to its own example</summary>
+            <div class="sha">
+              <a href="https://github.com/cloudfoundry/dea_ng/commit/
+24d6be2bd434dfd8f3f886bc5869fef83198bd8a" target="_blank">
+24d6be2</a>
+
+            </div>
+            <div class="body">* Usign the meta generated tests doesn't work for this one since it
+  doesn't accept a messge
+</div>
+            <div class="author">Eric Malm and Luan Santos</div>
+            <div class="date">Tue Oct 14 16:46:37 2014 -0700</div>
+          </details>
+      
+          <details class="commit">
+            <summary class="subject">Write error on failure in directory_server</summary>
+            <div class="sha">
+              <a href="https://github.com/cloudfoundry/dea_ng/commit/
+a8ccc02e03f67211cedb31b9461206e28b8fd34d" target="_blank">
+a8ccc02</a>
+
+            </div>
+            <div class="body">[#80319590]
+</div>
+            <div class="author">Chris Piraino and James Myers</div>
+            <div class="date">Tue Oct 14 15:16:20 2014 -0700</div>
+          </details>
+      
+          <details class="commit">
+            <summary class="subject">DEA registers all routes on router.start message</summary>
+            <div class="sha">
+              <a href="https://github.com/cloudfoundry/dea_ng/commit/
+aa2d0675b3f3fa889be9c40fb83c9318741d88f7" target="_blank">
+aa2d067</a>
+
+            </div>
+            <div class="body">[#80523740]
+</div>
+            <div class="author">Eric Malm and Luan Santos</div>
+            <div class="date">Tue Oct 14 14:42:17 2014 -0700</div>
+          </details>
+      
+          <details class="commit">
+            <summary class="subject">Arrange startup script so warden does not lose graceful shutdown logs</summary>
+            <div class="sha">
+              <a href="https://github.com/cloudfoundry/dea_ng/commit/
+e39ad94e5ea71c33ce91333803a1a956d652a738" target="_blank">
+e39ad94</a>
+
+            </div>
+            <div class="body">* exec start command so warden's iomux processes monitor the process
+  that will shutdown gracefully
+* composite start commands need to exec the last process
+      * run 'a && exec b' instead of 'a && b'
+* added integration test to capture graceful shutdown logs
+
+[#77564336]
+</div>
+            <div class="author">Chris Piraino, Eric Malm, James Myers and Luan Santos</div>
+            <div class="date">Tue Oct 14 11:24:37 2014 -0700</div>
+          </details>
+      
+  
+</details>
+
+
+    <details>
+  <summary><h2><a href="https://github.com/cloudfoundry/gorouter/commits/60a4b50431b94f135f3013825f11453a447e35e7" target="_blank">src/gorouter</a>
+    (2 commits)</h2></summary>
+
+  <H3><a href="https://github.com/cloudfoundry/gorouter/commit/b7aefed654fc1764e96374a2e8b61fdc78452faa"
+         target="_blank">b7aefed6</a>..<a href="https://github.com/cloudfoundry/gorouter/commit/60a4b50431b94f135f3013825f11453a447e35e7"
+           target="_blank">60a4b504</a>
+    (<a href="https://github.com/cloudfoundry/gorouter/compare/b7aefed654fc1764e96374a2e8b61fdc78452faa...60a4b50431b94f135f3013825f11453a447e35e7" target="_blank">compare</a>)
+ </H3>
+
+  
+      
+          <details class="commit">
+            <summary class="subject">Merge remote-tracking branch 'origin/pr/61'</summary>
+            <div class="sha">
+              <a href="https://github.com/cloudfoundry/gorouter/commit/60a4b50431b94f135f3013825f11453a447e35e7" target="_blank">60a4b504</a>
+
+            </div>
+            <div class="body">[#80444730]
+</div>
+            <div class="author">James Myers and Serguei Filimonov</div>
+            <div class="date">Wed Oct 15 11:27:21 2014 -0700</div>
+          </details>
+      
+          <details class="commit">
+            <summary class="subject">Fix the error caused by the callback in loop</summary>
+            <div class="sha">
+              <a href="https://github.com/cloudfoundry/gorouter/commit/
+a269013f446519b97c9cacb92f0dea970a753290" target="_blank">
+a269013</a>
+
+            </div>
+            <div class="body"></div>
+            <div class="author">liuhewei</div>
+            <div class="date">Sat Oct 11 00:37:41 2014 +0800</div>
+          </details>
+      
+  
+</details>
+
+
+    <details>
+  <summary><h2><a href="https://github.com/cloudfoundry/warden/commits/c344716494453daf1e32b268c50ca21516aa69ad" target="_blank">src/warden</a>
+    (0 commits)</h2></summary>
+
+  <H3><a href="https://github.com/cloudfoundry/warden/commit/c344716494453daf1e32b268c50ca21516aa69ad"
+         target="_blank">c3447164</a>..<a href="https://github.com/cloudfoundry/warden/commit/c344716494453daf1e32b268c50ca21516aa69ad"
+           target="_blank">c3447164</a>
+    (<a href="https://github.com/cloudfoundry/warden/compare/c344716494453daf1e32b268c50ca21516aa69ad...c344716494453daf1e32b268c50ca21516aa69ad" target="_blank">compare</a>)
+ </H3>
+
+  
+      <div class="no-changes">No Commits</div>
+  
+</details>
+
+
+    <details>
+  <summary><h2><a href="https://github.com/cloudfoundry/cloud_controller_ng/commits/b5436b956585f27d2619fff2cf394d16c0eeda03" target="_blank">src/cloud_controller_ng</a>
+    (7 commits)</h2></summary>
+
+  <H3><a href="https://github.com/cloudfoundry/cloud_controller_ng/commit/47c204bc1eb5343a7cc5ad5af91d9d741585687c"
+         target="_blank">47c204bc</a>..<a href="https://github.com/cloudfoundry/cloud_controller_ng/commit/b5436b956585f27d2619fff2cf394d16c0eeda03"
+           target="_blank">b5436b95</a>
+    (<a href="https://github.com/cloudfoundry/cloud_controller_ng/compare/47c204bc1eb5343a7cc5ad5af91d9d741585687c...b5436b956585f27d2619fff2cf394d16c0eeda03" target="_blank">compare</a>)
+ </H3>
+
+  
+      
+          <details class="commit">
+            <summary class="subject">Bump API Version to 2.16.0</summary>
+            <div class="sha">
+              <a href="https://github.com/cloudfoundry/cloud_controller_ng/commit/b5436b956585f27d2619fff2cf394d16c0eeda03" target="_blank">b5436b95</a>
+
+            </div>
+            <div class="body">[#78847148]
+</div>
+            <div class="author">Chris Piraino and Rick Reilly</div>
+            <div class="date">Tue Oct 21 16:36:00 2014 -0700</div>
+          </details>
+      
+          <details class="commit">
+            <summary class="subject">Bump vcap_common to 4.0.2.</summary>
+            <div class="sha">
+              <a href="https://github.com/cloudfoundry/cloud_controller_ng/commit/
+a2cabc53326e10bc44727d8ea9e53a9da1a87d98" target="_blank">
+a2cabc5</a>
+
+            </div>
+            <div class="body">- Also bumps vcap_common dependencies.
+
+[#80456142]
+</div>
+            <div class="author">Chris Piraino and Rick Reilly</div>
+            <div class="date">Tue Oct 21 15:26:38 2014 -0700</div>
+          </details>
+      
+          <details class="commit">
+            <summary class="subject">Update service plan for a single existing service instance</summary>
+            <div class="sha">
+              <a href="https://github.com/cloudfoundry/cloud_controller_ng/commit/
+ced51bd12341d1579adcf51825a53647cb1f6db7" target="_blank">
+ced51bd</a>
+
+            </div>
+            <div class="body">* allows user to curl -X PUT /v2/service_instances/:guid -d
+* '{"service_plan_guid": "new-guid"}', and calls out to the broker
+</div>
+            <div class="author">Ruth Byers and Raina Masand</div>
+            <div class="date">Mon Oct 20 17:48:58 2014 -0700</div>
+          </details>
+      
+          <details class="commit">
+            <summary class="subject">Add /v2/apps/:guid/copy_bits endpoint.</summary>
+            <div class="sha">
+              <a href="https://github.com/cloudfoundry/cloud_controller_ng/commit/
+7f73efbffcfa2fe0c64a67f06ca0e0ca7d63a70f" target="_blank">
+7f73efb</a>
+
+            </div>
+            <div class="body">- Bump API Version to 2.15.0
+- Adds new error AppBitsCopyInvalid
+
+[#78847148]
+</div>
+            <div class="author">Chris Piraino and Luan Santos</div>
+            <div class="date">Mon Oct 20 17:51:20 2014 -0700</div>
+          </details>
+      
+          <details class="commit">
+            <summary class="subject">Added VCAP_APPLICATION environment to the /v2/apps/:guid/env endpoint.</summary>
+            <div class="sha">
+              <a href="https://github.com/cloudfoundry/cloud_controller_ng/commit/
+a3bcb1705cce284e616ece0b1046ad7170e3d766" target="_blank">
+a3bcb17</a>
+
+            </div>
+            <div class="body">[#80664762]
+</div>
+            <div class="author">Chris Conway and Zach Robinson</div>
+            <div class="date">Fri Oct 17 15:48:55 2014 -0700</div>
+          </details>
+      
+          <details class="commit">
+            <summary class="subject">Use skip_cert_verify to determine how to connect for all UAA connections</summary>
+            <div class="sha">
+              <a href="https://github.com/cloudfoundry/cloud_controller_ng/commit/
+dfe78ee34a8c9d9d50f4530df7b53357db462a33" target="_blank">
+dfe78ee</a>
+
+            </div>
+            <div class="body">[#80878662]
+</div>
+            <div class="author">James Myers and Zach Robinson</div>
+            <div class="date">Fri Oct 17 10:28:02 2014 -0700</div>
+          </details>
+      
+          <details class="commit">
+            <summary class="subject">Do not change version when routes change (Diego)</summary>
+            <div class="sha">
+              <a href="https://github.com/cloudfoundry/cloud_controller_ng/commit/
+85a0fd50d34e51c405ea2887dd2197f5d48c5693" target="_blank">
+85a0fd5</a>
+
+            </div>
+            <div class="body">[#70401638]
+
+Signed-off-by: Michael Fraenkel <fraenkel@us.ibm.com>
+</div>
+            <div class="author">Matthew Sykes</div>
+            <div class="date">Thu Oct 16 14:56:41 2014 -0400</div>
+          </details>
+      
+  
+</details>
+
+
+    <details>
+  <summary><h2><a href="https://github.com/cloudfoundry/collector/commits/99b2dd673161349a45bba372be2d789c3a266045" target="_blank">src/collector</a>
+    (0 commits)</h2></summary>
+
+  <H3><a href="https://github.com/cloudfoundry/collector/commit/99b2dd673161349a45bba372be2d789c3a266045"
+         target="_blank">99b2dd67</a>..<a href="https://github.com/cloudfoundry/collector/commit/99b2dd673161349a45bba372be2d789c3a266045"
+           target="_blank">99b2dd67</a>
+    (<a href="https://github.com/cloudfoundry/collector/compare/99b2dd673161349a45bba372be2d789c3a266045...99b2dd673161349a45bba372be2d789c3a266045" target="_blank">compare</a>)
+ </H3>
+
+  
+      <div class="no-changes">No Commits</div>
+  
+</details>
+
+
+    <details>
+  <summary><h2><a href="https://github.com/cloudfoundry/shared-release-packages/commits/c2bb1410fc0dc81e18577cd51062290411025bf3" target="_blank">shared</a>
+    (0 commits)</h2></summary>
+
+  <H3><a href="https://github.com/cloudfoundry/shared-release-packages/commit/c2bb1410fc0dc81e18577cd51062290411025bf3"
+         target="_blank">c2bb1410</a>..<a href="https://github.com/cloudfoundry/shared-release-packages/commit/c2bb1410fc0dc81e18577cd51062290411025bf3"
+           target="_blank">c2bb1410</a>
+    (<a href="https://github.com/cloudfoundry/shared-release-packages/compare/c2bb1410fc0dc81e18577cd51062290411025bf3...c2bb1410fc0dc81e18577cd51062290411025bf3" target="_blank">compare</a>)
+ </H3>
+
+  
+      <div class="no-changes">No Commits</div>
+  
+</details>
+
+
+    <details>
+  <summary><h2><a href="https://github.com/cloudfoundry/hm-workspace/commits/cb6818926ec406e2152c5693cf3ef60f7f7cfc81" target="_blank">src/hm9000</a>
+    (0 commits)</h2></summary>
+
+  <H3><a href="https://github.com/cloudfoundry/hm-workspace/commit/cb6818926ec406e2152c5693cf3ef60f7f7cfc81"
+         target="_blank">cb681892</a>..<a href="https://github.com/cloudfoundry/hm-workspace/commit/cb6818926ec406e2152c5693cf3ef60f7f7cfc81"
+           target="_blank">cb681892</a>
+    (<a href="https://github.com/cloudfoundry/hm-workspace/compare/cb6818926ec406e2152c5693cf3ef60f7f7cfc81...cb6818926ec406e2152c5693cf3ef60f7f7cfc81" target="_blank">compare</a>)
+ </H3>
+
+  
+      <div class="no-changes">No Commits</div>
+  
+</details>
+
+
+    <details>
+  <summary><h2><a href="https://github.com/apcera/gnatsd/commits/7fb53586108b89a68d3db9ad2f7cf84a6842194c" target="_blank">src/gnatsd</a>
+    (9 commits)</h2></summary>
+
+  <H3><a href="https://github.com/apcera/gnatsd/commit/7d820b762fbcc58264b7d688bd869e5949e8d175"
+         target="_blank">7d820b76</a>..<a href="https://github.com/apcera/gnatsd/commit/7fb53586108b89a68d3db9ad2f7cf84a6842194c"
+           target="_blank">7fb53586</a>
+    (<a href="https://github.com/apcera/gnatsd/compare/7d820b762fbcc58264b7d688bd869e5949e8d175...7fb53586108b89a68d3db9ad2f7cf84a6842194c" target="_blank">compare</a>)
+ </H3>
+
+  
+      
+          <details class="commit">
+            <summary class="subject">Merge pull request #56 from apcera/fix-coveralls-report</summary>
+            <div class="sha">
+              <a href="https://github.com/apcera/gnatsd/commit/7fb53586108b89a68d3db9ad2f7cf84a6842194c" target="_blank">7fb53586</a>
+
+            </div>
+            <div class="body">Travis file was making the coveralls report think everything was master.</div>
+            <div class="author">Derek Collison</div>
+            <div class="date">Tue Oct 7 22:06:13 2014 -0700</div>
+          </details>
+      
+          <details class="commit">
+            <summary class="subject">Travis file was making the coveralls report think everything was master.</summary>
+            <div class="sha">
+              <a href="https://github.com/apcera/gnatsd/commit/
+738227a7e5e365df70182ce779c34f4c38570ab8" target="_blank">
+738227a</a>
+
+            </div>
+            <div class="body"></div>
+            <div class="author">Jonathon Klobucar</div>
+            <div class="date">Tue Oct 7 21:14:55 2014 -0700</div>
+          </details>
+      
+          <details class="commit">
+            <summary class="subject">Merge pull request #53 from mcuadros/master</summary>
+            <div class="sha">
+              <a href="https://github.com/apcera/gnatsd/commit/
+0d2688d3a20754d4a1dfe685634d8455d6c55b69" target="_blank">
+0d2688d</a>
+
+            </div>
+            <div class="body">improved connz with subscriptions stats and list of subscriptions by client</div>
+            <div class="author">Derek Collison</div>
+            <div class="date">Mon Oct 6 13:56:18 2014 -0700</div>
+          </details>
+      
+          <details class="commit">
+            <summary class="subject">fixing http test, disabling keepalive</summary>
+            <div class="sha">
+              <a href="https://github.com/apcera/gnatsd/commit/
+d85225e56bba3717795cedf990cd123518ed8818" target="_blank">
+d85225e</a>
+
+            </div>
+            <div class="body"></div>
+            <div class="author">Máximo Cuadros Ortiz</div>
+            <div class="date">Mon Oct 6 18:43:49 2014 +0200</div>
+          </details>
+      
+          <details class="commit">
+            <summary class="subject">connz: limit and offset</summary>
+            <div class="sha">
+              <a href="https://github.com/apcera/gnatsd/commit/
+502ba2e43ea0233640b0daae6a226ce503ad1d5e" target="_blank">
+502ba2e</a>
+
+            </div>
+            <div class="body"></div>
+            <div class="author">Máximo Cuadros Ortiz</div>
+            <div class="date">Sat Oct 4 18:34:27 2014 +0200</div>
+          </details>
+      
+          <details class="commit">
+            <summary class="subject">added subsz and connz extended, and merged with varz</summary>
+            <div class="sha">
+              <a href="https://github.com/apcera/gnatsd/commit/
+3cde0eef604d9b148756f2f4c1111a1d09224804" target="_blank">
+3cde0ee</a>
+
+            </div>
+            <div class="body"></div>
+            <div class="author">Máximo Cuadros Ortiz</div>
+            <div class="date">Sat Oct 4 01:00:25 2014 +0200</div>
+          </details>
+      
+          <details class="commit">
+            <summary class="subject">improved connz with subscriptions stats and list of subscriptions by client</summary>
+            <div class="sha">
+              <a href="https://github.com/apcera/gnatsd/commit/
+9afb590cf9547d5d0ea08d6ccf788814a3ca2677" target="_blank">
+9afb590</a>
+
+            </div>
+            <div class="body"></div>
+            <div class="author">Máximo Cuadros Ortiz</div>
+            <div class="date">Fri Oct 3 01:39:45 2014 +0200</div>
+          </details>
+      
+          <details class="commit">
+            <summary class="subject">No longer add subscriptions to router clients with no existing connection.</summary>
+            <div class="sha">
+              <a href="https://github.com/apcera/gnatsd/commit/
+79c45db605571d3c689878a8f680bc27abb02e7d" target="_blank">
+79c45db</a>
+
+            </div>
+            <div class="body">race condition:
+ - a client is closed at the same time as an incoming SUB message occurs.
+ - the subscription is added to the srv.sl even though the socket is
+   closed.
+ - the connection cleanup has already run, so the bad state is never
+   corrected
+ - now messages may be forwarded to a client without a connection
+ - messages will not be forwarded to a router that needs it now, because
+   processMsg assumes the router already received it
+</div>
+            <div class="author">Julian Friedman and Zach Robinson</div>
+            <div class="date">Wed Sep 17 16:35:20 2014 -0700</div>
+          </details>
+      
+          <details class="commit">
+            <summary class="subject">Make sure to wait long enough</summary>
+            <div class="sha">
+              <a href="https://github.com/apcera/gnatsd/commit/
+cfdab7446c6a8071fbdd87eaf1b4c9b796b1c421" target="_blank">
+cfdab74</a>
+
+            </div>
+            <div class="body"></div>
+            <div class="author">Derek Collison</div>
+            <div class="date">Thu Sep 18 21:52:41 2014 -0700</div>
+          </details>
+      
+  
+</details>
+
+
+    <details>
+  <summary><h2><a href="https://github.com/cloudfoundry/loggregator/commits/fa7ff74dc794c48372494c800b64c4853b51c10b" target="_blank">src/loggregator</a>
+    (0 commits)</h2></summary>
+
+  <H3><a href="https://github.com/cloudfoundry/loggregator/commit/fa7ff74dc794c48372494c800b64c4853b51c10b"
+         target="_blank">fa7ff74d</a>..<a href="https://github.com/cloudfoundry/loggregator/commit/fa7ff74dc794c48372494c800b64c4853b51c10b"
+           target="_blank">fa7ff74d</a>
+    (<a href="https://github.com/cloudfoundry/loggregator/compare/fa7ff74dc794c48372494c800b64c4853b51c10b...fa7ff74dc794c48372494c800b64c4853b51c10b" target="_blank">compare</a>)
+ </H3>
+
+  
+      <div class="no-changes">No Commits</div>
+  
+</details>
+
+
+    <details>
+  <summary><h2><a href="https://github.com/cloudfoundry/cf-acceptance-tests/commits/fef3113941354899e3bb97714d31e54628ec7724" target="_blank">src/acceptance-tests</a>
+    (4 commits)</h2></summary>
+
+  <H3><a href="https://github.com/cloudfoundry/cf-acceptance-tests/commit/f3f31e169e983150270d911e29d231c7f2552924"
+         target="_blank">f3f31e16</a>..<a href="https://github.com/cloudfoundry/cf-acceptance-tests/commit/fef3113941354899e3bb97714d31e54628ec7724"
+           target="_blank">fef31139</a>
+    (<a href="https://github.com/cloudfoundry/cf-acceptance-tests/compare/f3f31e169e983150270d911e29d231c7f2552924...fef3113941354899e3bb97714d31e54628ec7724" target="_blank">compare</a>)
+ </H3>
+
+  
+      
+          <details class="commit">
+            <summary class="subject">Revert "Added 'cf api' to the before for the build-pack tests"</summary>
+            <div class="sha">
+              <a href="https://github.com/cloudfoundry/cf-acceptance-tests/commit/fef3113941354899e3bb97714d31e54628ec7724" target="_blank">fef31139</a>
+
+            </div>
+            <div class="body">This reverts commit 82a53e827b9513a50b64e281dd06149e6b34e091.
+</div>
+            <div class="author">John Tuley</div>
+            <div class="date">Wed Oct 15 15:58:53 2014 -0600</div>
+          </details>
+      
+          <details class="commit">
+            <summary class="subject">Revert "Allow us to write log messages with a delay"</summary>
+            <div class="sha">
+              <a href="https://github.com/cloudfoundry/cf-acceptance-tests/commit/
+09634831b28ac30b313fa196500b517ebabd8165" target="_blank">
+0963483</a>
+
+            </div>
+            <div class="body">This reverts commit 0485313b360f39c8016297c1c8929a8cb2a7d7b8.
+</div>
+            <div class="author">John Tuley</div>
+            <div class="date">Wed Oct 15 15:58:49 2014 -0600</div>
+          </details>
+      
+          <details class="commit">
+            <summary class="subject">Added 'cf api' to the before for the build-pack tests</summary>
+            <div class="sha">
+              <a href="https://github.com/cloudfoundry/cf-acceptance-tests/commit/
+82a53e827b9513a50b64e281dd06149e6b34e091" target="_blank">
+82a53e8</a>
+
+            </div>
+            <div class="body">[#79547372]
+</div>
+            <div class="author">Warren Fernandes</div>
+            <div class="date">Tue Oct 7 10:35:05 2014 -0600</div>
+          </details>
+      
+          <details class="commit">
+            <summary class="subject">Allow us to write log messages with a delay</summary>
+            <div class="sha">
+              <a href="https://github.com/cloudfoundry/cf-acceptance-tests/commit/
+0485313b360f39c8016297c1c8929a8cb2a7d7b8" target="_blank">
+0485313</a>
+
+            </div>
+            <div class="body"></div>
+            <div class="author">Mike Gehard</div>
+            <div class="date">Wed Oct 1 14:36:01 2014 -0600</div>
+          </details>
+      
+  
+</details>
+
+
+    <details>
+  <summary><h2><a href="https://github.com/cloudfoundry/ruby-package/commits/01b9b845268ba49041068bb877452ee3e242682f" target="_blank">packages/ruby</a>
+    (0 commits)</h2></summary>
+
+  <H3><a href="https://github.com/cloudfoundry/ruby-package/commit/01b9b845268ba49041068bb877452ee3e242682f"
+         target="_blank">01b9b845</a>..<a href="https://github.com/cloudfoundry/ruby-package/commit/01b9b845268ba49041068bb877452ee3e242682f"
+           target="_blank">01b9b845</a>
+    (<a href="https://github.com/cloudfoundry/ruby-package/compare/01b9b845268ba49041068bb877452ee3e242682f...01b9b845268ba49041068bb877452ee3e242682f" target="_blank">compare</a>)
+ </H3>
+
+  
+      <div class="no-changes">No Commits</div>
+  
+</details>
+
+
+    <details>
+  <summary><h2><a href="https://github.com/cloudfoundry/uaa/commits/cba095870204fa62b1278163f99084e159ceb3a6" target="_blank">src/uaa</a>
+    (0 commits)</h2></summary>
+
+  <H3><a href="https://github.com/cloudfoundry/uaa/commit/cba095870204fa62b1278163f99084e159ceb3a6"
+         target="_blank">cba09587</a>..<a href="https://github.com/cloudfoundry/uaa/commit/cba095870204fa62b1278163f99084e159ceb3a6"
+           target="_blank">cba09587</a>
+    (<a href="https://github.com/cloudfoundry/uaa/compare/cba095870204fa62b1278163f99084e159ceb3a6...cba095870204fa62b1278163f99084e159ceb3a6" target="_blank">compare</a>)
+ </H3>
+
+  
+      <div class="no-changes">No Commits</div>
+  
+</details>
+
+
+    <details>
+  <summary><h2><a href="https://github.com/cloudfoundry/login-server/commits/d479be680dcc9d696bab090454780bc3a69c119e" target="_blank">src/login</a>
+    (0 commits)</h2></summary>
+
+  <H3><a href="https://github.com/cloudfoundry/login-server/commit/d479be680dcc9d696bab090454780bc3a69c119e"
+         target="_blank">d479be68</a>..<a href="https://github.com/cloudfoundry/login-server/commit/d479be680dcc9d696bab090454780bc3a69c119e"
+           target="_blank">d479be68</a>
+    (<a href="https://github.com/cloudfoundry/login-server/compare/d479be680dcc9d696bab090454780bc3a69c119e...d479be680dcc9d696bab090454780bc3a69c119e" target="_blank">compare</a>)
+ </H3>
+
+  
+      <div class="no-changes">No Commits</div>
+  
+</details>
+
+
+    <details>
+  <summary><h2><a href="https://github.com/cloudfoundry-incubator/etcd-metrics-server/commits/90c444c7f93cacb998e45c46f1e06ecf4c8eb9c4" target="_blank">src/etcd-metrics-server</a>
+    (0 commits)</h2></summary>
+
+  <H3><a href="https://github.com/cloudfoundry-incubator/etcd-metrics-server/commit/90c444c7f93cacb998e45c46f1e06ecf4c8eb9c4"
+         target="_blank">90c444c7</a>..<a href="https://github.com/cloudfoundry-incubator/etcd-metrics-server/commit/90c444c7f93cacb998e45c46f1e06ecf4c8eb9c4"
+           target="_blank">90c444c7</a>
+    (<a href="https://github.com/cloudfoundry-incubator/etcd-metrics-server/compare/90c444c7f93cacb998e45c46f1e06ecf4c8eb9c4...90c444c7f93cacb998e45c46f1e06ecf4c8eb9c4" target="_blank">compare</a>)
+ </H3>
+
+  
+      <div class="no-changes">No Commits</div>
+  
+</details>
+
+
+    <details>
+  <summary><h2><a href="https://github.com/coreos/etcd/commits/49e0dff2b8529801beb09164729caf96a5b93ef0" target="_blank">src/etcd</a>
+    (0 commits)</h2></summary>
+
+  <H3><a href="https://github.com/coreos/etcd/commit/49e0dff2b8529801beb09164729caf96a5b93ef0"
+         target="_blank">49e0dff2</a>..<a href="https://github.com/coreos/etcd/commit/49e0dff2b8529801beb09164729caf96a5b93ef0"
+           target="_blank">49e0dff2</a>
+    (<a href="https://github.com/coreos/etcd/compare/49e0dff2b8529801beb09164729caf96a5b93ef0...49e0dff2b8529801beb09164729caf96a5b93ef0" target="_blank">compare</a>)
+ </H3>
+
+  
+      <div class="no-changes">No Commits</div>
+  
+</details>
+
+
+    <details>
+  <summary><h2><a href="https://github.com/cloudfoundry-incubator/cf-smoke-tests/commits/560d29754a9e0657617262d89ef30791c1b6f977" target="_blank">src/smoke-tests</a>
+    (0 commits)</h2></summary>
+
+  <H3><a href="https://github.com/cloudfoundry-incubator/cf-smoke-tests/commit/560d29754a9e0657617262d89ef30791c1b6f977"
+         target="_blank">560d2975</a>..<a href="https://github.com/cloudfoundry-incubator/cf-smoke-tests/commit/560d29754a9e0657617262d89ef30791c1b6f977"
+           target="_blank">560d2975</a>
+    (<a href="https://github.com/cloudfoundry-incubator/cf-smoke-tests/compare/560d29754a9e0657617262d89ef30791c1b6f977...560d29754a9e0657617262d89ef30791c1b6f977" target="_blank">compare</a>)
+ </H3>
+
+  
+      <div class="no-changes">No Commits</div>
+  
+</details>
+
+
+    <details>
+  <summary><h2><a href="https://github.com/cloudfoundry/ruby-package/commits/9a4fa592062f27f3e559354c2bb28aaef9dddfe9" target="_blank">packages/ruby-2.1.3</a>
+    (0 commits)</h2></summary>
+
+  <H3><a href="https://github.com/cloudfoundry/ruby-package/commit/9a4fa592062f27f3e559354c2bb28aaef9dddfe9"
+         target="_blank">9a4fa592</a>..<a href="https://github.com/cloudfoundry/ruby-package/commit/9a4fa592062f27f3e559354c2bb28aaef9dddfe9"
+           target="_blank">9a4fa592</a>
+    (<a href="https://github.com/cloudfoundry/ruby-package/compare/9a4fa592062f27f3e559354c2bb28aaef9dddfe9...9a4fa592062f27f3e559354c2bb28aaef9dddfe9" target="_blank">compare</a>)
+ </H3>
+
+  
+      <div class="no-changes">No Commits</div>
+  
+</details>
+
+
+</body>
+</html>
