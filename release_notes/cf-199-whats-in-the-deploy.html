@@ -1,0 +1,934 @@
+<html>
+<head>
+  <style>
+      body {
+          font-family: "helvetica neue";
+          font-size: 14px;
+      }
+
+      h2 {
+          display: inline;
+      }
+
+      a {
+          text-decoration: none;
+      }
+
+      a:hover {
+          text-decoration: underline;
+      }
+
+      .no-changes {
+          margin: 10px;
+          padding: 10px;
+          background-color: #efe;
+      }
+
+      .commit {
+          margin: 10px;
+          padding: 10px;
+          background-color: #f5f5f5;
+      }
+
+      .commit:nth-child(odd) {
+          background-color: #ddd;
+      }
+
+      .sha {
+          margin-bottom: 5px;
+          font-size: 12px;
+      }
+
+      .sha a {
+          color: #777;
+      }
+
+      .subject {
+          font-weight: bold;
+      }
+
+      .body {
+          padding: 10px;
+          font-size:;
+      }
+
+      .author {
+          font-style: italic;
+      }
+
+      .date {
+          color: #777;
+          font-size: 12px;
+      }
+  </style>
+</head>
+<body>
+<h1>Changes in deploy from origin/deployed-to-prod to c9f6ef27a16bacd6b5d201f5e1104f7c456b856f</h1>
+
+    <details>
+  <summary><h2><a href="https://github.com/cloudfoundry/cf-release/commits/c9f6ef27a16bacd6b5d201f5e1104f7c456b856f" target="_blank">.</a>
+    (14 commits)</h2></summary>
+
+  <H3><a href="https://github.com/cloudfoundry/cf-release/commit/origin/deployed-to-prod"
+         target="_blank">origin/d</a>..<a href="https://github.com/cloudfoundry/cf-release/commit/c9f6ef27a16bacd6b5d201f5e1104f7c456b856f"
+           target="_blank">c9f6ef27</a>
+    (<a href="https://github.com/cloudfoundry/cf-release/compare/origin/deployed-to-prod...c9f6ef27a16bacd6b5d201f5e1104f7c456b856f" target="_blank">compare</a>)
+ </H3>
+
+  
+      
+          <details class="commit">
+            <summary class="subject">Bump src/cloud_controller_ng</summary>
+            <div class="sha">
+              <a href="https://github.com/cloudfoundry/cf-release/commit/c9f6ef27a16bacd6b5d201f5e1104f7c456b856f" target="_blank">c9f6ef27</a>
+
+            </div>
+            <div class="body">Bump cloudfoundry/cloud_controller_ng:
+  Zach Robinson:
+     Update staging error reporting to cover all failure cases. ( Travis started: <a href="https://travis-ci.org/cloudfoundry/cloud_controller_ng/builds/50433011">https://travis-ci.org/cloudfoundry/cloud_controller_ng/builds/50433011</a> )
+  Tim Hausler and Zach Robinson:
+     fix droplet output on packages api spec ( Travis Unknown )
+     Expose detected_start_command to v3 droplet api. ( Travis Unknown )
+     Expose failure_reason on the v3 droplet api. ( Travis Unknown )
+     Store detected_start_command on v3 droplet. ( Travis Unknown )
+     Record staging failure reason on a v3 droplet ( Travis Unknown )
+  Glen Tona, Jeff Hui and Michael Maximilien:
+     Merge branch 'master' of <a href="https://github.com/cloudfoundry/cloud_controller_ng">https://github.com/cloudfoundry/cloud_controller_ng</a> ( Travis Success: <a href="https://travis-ci.org/cloudfoundry/cloud_controller_ng/builds/50430627">https://travis-ci.org/cloudfoundry/cloud_controller_ng/builds/50430627</a> )
+     Implements async deprovision (happy path) ( Travis Unknown )
+</div>
+            <div class="author">Zach Robinson</div>
+            <div class="date">Wed Feb 11 17:40:44 2015 -0800</div>
+          </details>
+      
+          <details class="commit">
+            <summary class="subject">Bump src/acceptance-tests</summary>
+            <div class="sha">
+              <a href="https://github.com/cloudfoundry/cf-release/commit/
+a93f60e85b6dca463449f648ffa80ff6ea611e04" target="_blank">
+a93f60e</a>
+
+            </div>
+            <div class="body">Bump :
+  David Sabeti and Glen Tona:
+     Update services CATS to include async update
+  Chris Piraino and Dan Lavine:
+     Point v3 package upload to correct path
+     Gofmt
+</div>
+            <div class="author">David Sabeti and Glen Tona</div>
+            <div class="date">Wed Feb 11 14:49:13 2015 -0800</div>
+          </details>
+      
+          <details class="commit">
+            <summary class="subject">Bump src/acceptance-tests</summary>
+            <div class="sha">
+              <a href="https://github.com/cloudfoundry/cf-release/commit/
+5634135e98563020fd941a44610628c32f60ba48" target="_blank">
+5634135</a>
+
+            </div>
+            <div class="body">Bump :
+  David Sabeti and Glen Tona:
+     Update services CATS to include async update
+</div>
+            <div class="author">David Sabeti and Glen Tona</div>
+            <div class="date">Tue Feb 10 11:40:25 2015 -0800</div>
+          </details>
+      
+          <details class="commit">
+            <summary class="subject">bump cc</summary>
+            <div class="sha">
+              <a href="https://github.com/cloudfoundry/cf-release/commit/
+413dd8236229d65ea7b2328ffddf83f3a2ed4bd0" target="_blank">
+413dd82</a>
+
+            </div>
+            <div class="body"></div>
+            <div class="author">Serguei Filimonov and Sujoy Basu</div>
+            <div class="date">Wed Feb 11 12:21:38 2015 -0800</div>
+          </details>
+      
+          <details class="commit">
+            <summary class="subject">Bump src/cloud_controller_ng</summary>
+            <div class="sha">
+              <a href="https://github.com/cloudfoundry/cf-release/commit/
+3c0d479ccb79d9259349f57c18bc31d7ca70e5d4" target="_blank">
+3c0d479</a>
+
+            </div>
+            <div class="body">Bump cloudfoundry/cloud_controller_ng:
+  Chris Piraino and Dan Lavine:
+     Send stack name with staging and start messages ( Travis created: <a href="https://travis-ci.org/cloudfoundry/cloud_controller_ng/builds/50395488">https://travis-ci.org/cloudfoundry/cloud_controller_ng/builds/50395488</a> )
+</div>
+            <div class="author">Chris Piraino and Dan Lavine</div>
+            <div class="date">Wed Feb 11 11:57:27 2015 -0800</div>
+          </details>
+      
+          <details class="commit">
+            <summary class="subject">Remove sqlite</summary>
+            <div class="sha">
+              <a href="https://github.com/cloudfoundry/cf-release/commit/
+4569ec7b87eec475bc48ad7c7797c9d4795e2e2d" target="_blank">
+4569ec7</a>
+
+            </div>
+            <div class="body">[#84969226]
+</div>
+            <div class="author">Zach Robinson</div>
+            <div class="date">Tue Feb 10 17:42:11 2015 -0800</div>
+          </details>
+      
+          <details class="commit">
+            <summary class="subject">disable colorized ginkgo output for acceptance_tests errand</summary>
+            <div class="sha">
+              <a href="https://github.com/cloudfoundry/cf-release/commit/
+264de0d8beedde568513a211aba9e6bd6bc40d7a" target="_blank">
+264de0d</a>
+
+            </div>
+            <div class="body">[#77598984]
+</div>
+            <div class="author">Zach Robinson</div>
+            <div class="date">Tue Feb 10 17:11:10 2015 -0800</div>
+          </details>
+      
+          <details class="commit">
+            <summary class="subject">Bump src/dea_next</summary>
+            <div class="sha">
+              <a href="https://github.com/cloudfoundry/cf-release/commit/
+e12557839d6308fc5f974da89be3260586cb50ca" target="_blank">
+e125578</a>
+
+            </div>
+            <div class="body">Bump cloudfoundry/dea_ng:
+  Luan Santos and Sujoy Basu:
+     Escape VCAP_SERVICES and VCAP_APPLICATION env variables ( Travis created: <a href="https://travis-ci.org/cloudfoundry/dea_ng/builds/50277374">https://travis-ci.org/cloudfoundry/dea_ng/builds/50277374</a> )
+</div>
+            <div class="author">Luan Santos and Sujoy Basu</div>
+            <div class="date">Tue Feb 10 15:21:55 2015 -0800</div>
+          </details>
+      
+          <details class="commit">
+            <summary class="subject">Do not sync blobs on travis, do it on create release</summary>
+            <div class="sha">
+              <a href="https://github.com/cloudfoundry/cf-release/commit/
+a862ef5310ba19f42f291558949e6faa3f78ac13" target="_blank">
+a862ef5</a>
+
+            </div>
+            <div class="body"></div>
+            <div class="author">Luan Santos and Sujoy Basu</div>
+            <div class="date">Tue Feb 10 15:18:40 2015 -0800</div>
+          </details>
+      
+          <details class="commit">
+            <summary class="subject">Merge branch 'v198-branch' into develop</summary>
+            <div class="sha">
+              <a href="https://github.com/cloudfoundry/cf-release/commit/
+f744443f9edc67e969494f3693e9b4783eb9d1af" target="_blank">
+f744443</a>
+
+            </div>
+            <div class="body"></div>
+            <div class="author">Gary Liu</div>
+            <div class="date">Tue Feb 10 23:03:56 2015 +0000</div>
+          </details>
+      
+          <details class="commit">
+            <summary class="subject">Add cc.instance_file_descriptor_limit property</summary>
+            <div class="sha">
+              <a href="https://github.com/cloudfoundry/cf-release/commit/
+5fb802eaa5ce172e81e00c2cbd456eac868af1bb" target="_blank">
+5fb802e</a>
+
+            </div>
+            <div class="body">Bump src/cloud_controller_ng
+
+Bump cloudfoundry/cloud_controller_ng:
+  Zach Robinson:
+     rename container_file_descriptor_limit -> instance_file_descriptor_limit ( Travis created: <a href="https://travis-ci.org/cloudfoundry/cloud_controller_ng/builds/50273024">https://travis-ci.org/cloudfoundry/cloud_controller_ng/builds/50273024</a> )
+     Merge remote-tracking branch 'origin/pr/323' ( Travis Unknown )
+  Jeff Hui and Michael Maximilien:
+     CC correctly handles when broker requires async deprovision. ( Travis Success: <a href="https://travis-ci.org/cloudfoundry/cloud_controller_ng/builds/50254298">https://travis-ci.org/cloudfoundry/cloud_controller_ng/builds/50254298</a> )
+     Added validation of operation state for deprovision request. ( Travis Success: <a href="https://travis-ci.org/cloudfoundry/cloud_controller_ng/builds/50245922">https://travis-ci.org/cloudfoundry/cloud_controller_ng/builds/50245922</a> )
+  shashidharatd:
+     Configurable file_descriptors limit for warden container ( Travis Unknown )
+</div>
+            <div class="author">Zach Robinson</div>
+            <div class="date">Tue Feb 10 14:42:39 2015 -0800</div>
+          </details>
+      
+          <details class="commit">
+            <summary class="subject">Bump src/cloud_controller_ng</summary>
+            <div class="sha">
+              <a href="https://github.com/cloudfoundry/cf-release/commit/
+35126d618727c38b62743a17fa4f418857d32723" target="_blank">
+35126d6</a>
+
+            </div>
+            <div class="body">Bump cloudfoundry/cloud_controller_ng:
+  Luan Santos and Sujoy Basu:
+     Allow admins to create wildcard routes ( Travis created: <a href="https://travis-ci.org/cloudfoundry/cloud_controller_ng/builds/50241014">https://travis-ci.org/cloudfoundry/cloud_controller_ng/builds/50241014</a> )
+</div>
+            <div class="author">Luan Santos and Sujoy Basu</div>
+            <div class="date">Tue Feb 10 10:30:38 2015 -0800</div>
+          </details>
+      
+          <details class="commit">
+            <summary class="subject">Bump src/cloud_controller_ng</summary>
+            <div class="sha">
+              <a href="https://github.com/cloudfoundry/cf-release/commit/
+401d521f91a8501023ab0434b781ffd3db35bdea" target="_blank">
+401d521</a>
+
+            </div>
+            <div class="body">Bump cloudfoundry/cloud_controller_ng:
+  David Sabeti and Glen Tona:
+     Request instance state when broker return state 'in progress' for update request ( Travis started: <a href="https://travis-ci.org/cloudfoundry/cloud_controller_ng/builds/50238691">https://travis-ci.org/cloudfoundry/cloud_controller_ng/builds/50238691</a> )
+  Luan Santos:
+     Setup logging properly on CC worker and clock jobs ( Travis started: <a href="https://travis-ci.org/cloudfoundry/cloud_controller_ng/builds/50237488">https://travis-ci.org/cloudfoundry/cloud_controller_ng/builds/50237488</a> )
+</div>
+            <div class="author">David Sabeti and Glen Tona</div>
+            <div class="date">Tue Feb 10 10:13:47 2015 -0800</div>
+          </details>
+      
+          <details class="commit">
+            <summary class="subject">Bump src/cloud_controller_ng</summary>
+            <div class="sha">
+              <a href="https://github.com/cloudfoundry/cf-release/commit/
+b5295b868c07f5e26d4796689788740c3b4ee3da" target="_blank">
+b5295b8</a>
+
+            </div>
+            <div class="body">Bump cloudfoundry/cloud_controller_ng:
+  David Sabeti and Glen Tona:
+     Record last operation state when update request fails ( Travis Unknown )
+     Move logic from service_instance_controller to client ( Travis Unknown )
+  David Sabeti:
+     Remove dead code in user_provided_service_instances_controller ( Travis Unknown )
+</div>
+            <div class="author">David Sabeti and Glen Tona</div>
+            <div class="date">Tue Feb 10 09:30:41 2015 -0800</div>
+          </details>
+      
+  
+</details>
+
+
+    <details>
+  <summary><h2><a href="https://github.com/cloudfoundry/dea_ng/commits/a3a3c32fa4f34a2a364a70b8600db157326c1ee9" target="_blank">src/dea_next</a>
+    (1 commits)</h2></summary>
+
+  <H3><a href="https://github.com/cloudfoundry/dea_ng/commit/48b457da857b7546863f0b2ac5047b00b84562d8"
+         target="_blank">48b457da</a>..<a href="https://github.com/cloudfoundry/dea_ng/commit/a3a3c32fa4f34a2a364a70b8600db157326c1ee9"
+           target="_blank">a3a3c32f</a>
+    (<a href="https://github.com/cloudfoundry/dea_ng/compare/48b457da857b7546863f0b2ac5047b00b84562d8...a3a3c32fa4f34a2a364a70b8600db157326c1ee9" target="_blank">compare</a>)
+ </H3>
+
+  
+      
+          <details class="commit">
+            <summary class="subject">Escape VCAP_SERVICES and VCAP_APPLICATION env variables</summary>
+            <div class="sha">
+              <a href="https://github.com/cloudfoundry/dea_ng/commit/a3a3c32fa4f34a2a364a70b8600db157326c1ee9" target="_blank">a3a3c32f</a>
+
+            </div>
+            <div class="body">[#77045902] [closes #144 #153]
+</div>
+            <div class="author">Luan Santos and Sujoy Basu</div>
+            <div class="date">Tue Feb 10 14:25:23 2015 -0800</div>
+          </details>
+      
+  
+</details>
+
+
+    <details>
+  <summary><h2><a href="https://github.com/cloudfoundry/gorouter/commits/c06f5c8b8bb6233f538664d662ee4bbfea6f1e37" target="_blank">src/gorouter</a>
+    (0 commits)</h2></summary>
+
+  <H3><a href="https://github.com/cloudfoundry/gorouter/commit/c06f5c8b8bb6233f538664d662ee4bbfea6f1e37"
+         target="_blank">c06f5c8b</a>..<a href="https://github.com/cloudfoundry/gorouter/commit/c06f5c8b8bb6233f538664d662ee4bbfea6f1e37"
+           target="_blank">c06f5c8b</a>
+    (<a href="https://github.com/cloudfoundry/gorouter/compare/c06f5c8b8bb6233f538664d662ee4bbfea6f1e37...c06f5c8b8bb6233f538664d662ee4bbfea6f1e37" target="_blank">compare</a>)
+ </H3>
+
+  
+      <div class="no-changes">No Commits</div>
+  
+</details>
+
+
+    <details>
+  <summary><h2><a href="https://github.com/cloudfoundry/warden/commits/dbde59424a6cdbeae3a265c1c8ce5a37f8f4ebae" target="_blank">src/warden</a>
+    (0 commits)</h2></summary>
+
+  <H3><a href="https://github.com/cloudfoundry/warden/commit/dbde59424a6cdbeae3a265c1c8ce5a37f8f4ebae"
+         target="_blank">dbde5942</a>..<a href="https://github.com/cloudfoundry/warden/commit/dbde59424a6cdbeae3a265c1c8ce5a37f8f4ebae"
+           target="_blank">dbde5942</a>
+    (<a href="https://github.com/cloudfoundry/warden/compare/dbde59424a6cdbeae3a265c1c8ce5a37f8f4ebae...dbde59424a6cdbeae3a265c1c8ce5a37f8f4ebae" target="_blank">compare</a>)
+ </H3>
+
+  
+      <div class="no-changes">No Commits</div>
+  
+</details>
+
+
+    <details>
+  <summary><h2><a href="https://github.com/cloudfoundry/cloud_controller_ng/commits/f6bd8507290871c4542c0590e33a0b17a168cb1c" target="_blank">src/cloud_controller_ng</a>
+    (21 commits)</h2></summary>
+
+  <H3><a href="https://github.com/cloudfoundry/cloud_controller_ng/commit/fb912776cf3413102fee237d48940a7901e6a05b"
+         target="_blank">fb912776</a>..<a href="https://github.com/cloudfoundry/cloud_controller_ng/commit/f6bd8507290871c4542c0590e33a0b17a168cb1c"
+           target="_blank">f6bd8507</a>
+    (<a href="https://github.com/cloudfoundry/cloud_controller_ng/compare/fb912776cf3413102fee237d48940a7901e6a05b...f6bd8507290871c4542c0590e33a0b17a168cb1c" target="_blank">compare</a>)
+ </H3>
+
+  
+      
+          <details class="commit">
+            <summary class="subject">Update staging error reporting to cover all failure cases.</summary>
+            <div class="sha">
+              <a href="https://github.com/cloudfoundry/cloud_controller_ng/commit/f6bd8507290871c4542c0590e33a0b17a168cb1c" target="_blank">f6bd8507</a>
+
+            </div>
+            <div class="body"></div>
+            <div class="author">Zach Robinson</div>
+            <div class="date">Wed Feb 11 17:02:15 2015 -0800</div>
+          </details>
+      
+          <details class="commit">
+            <summary class="subject">fix droplet output on packages api spec</summary>
+            <div class="sha">
+              <a href="https://github.com/cloudfoundry/cloud_controller_ng/commit/
+ef017ad92600ad4aa68db2a0a647fb1b307c5425" target="_blank">
+ef017ad</a>
+
+            </div>
+            <div class="body"></div>
+            <div class="author">Tim Hausler and Zach Robinson</div>
+            <div class="date">Wed Feb 11 12:00:25 2015 -0800</div>
+          </details>
+      
+          <details class="commit">
+            <summary class="subject">Expose detected_start_command to v3 droplet api.</summary>
+            <div class="sha">
+              <a href="https://github.com/cloudfoundry/cloud_controller_ng/commit/
+e8682f967e9055ead27b8a0a6d470e4e372b3623" target="_blank">
+e8682f9</a>
+
+            </div>
+            <div class="body">[#87167962]
+</div>
+            <div class="author">Tim Hausler and Zach Robinson</div>
+            <div class="date">Wed Feb 11 11:40:11 2015 -0800</div>
+          </details>
+      
+          <details class="commit">
+            <summary class="subject">Expose failure_reason on the v3 droplet api.</summary>
+            <div class="sha">
+              <a href="https://github.com/cloudfoundry/cloud_controller_ng/commit/
+198598b886585d6b4be26f57ebe96fe7f0d7e1e7" target="_blank">
+198598b</a>
+
+            </div>
+            <div class="body">[#87167974]
+</div>
+            <div class="author">Tim Hausler and Zach Robinson</div>
+            <div class="date">Wed Feb 11 11:28:16 2015 -0800</div>
+          </details>
+      
+          <details class="commit">
+            <summary class="subject">Store detected_start_command on v3 droplet.</summary>
+            <div class="sha">
+              <a href="https://github.com/cloudfoundry/cloud_controller_ng/commit/
+dab78742bd98c708a9f051a946af53fd26f659d6" target="_blank">
+dab7874</a>
+
+            </div>
+            <div class="body">[#87167962]
+</div>
+            <div class="author">Tim Hausler and Zach Robinson</div>
+            <div class="date">Wed Feb 11 11:08:57 2015 -0800</div>
+          </details>
+      
+          <details class="commit">
+            <summary class="subject">Record staging failure reason on a v3 droplet</summary>
+            <div class="sha">
+              <a href="https://github.com/cloudfoundry/cloud_controller_ng/commit/
+72dd8e66faff89ebeb6eaea5ae9255b55bfb378c" target="_blank">
+72dd8e6</a>
+
+            </div>
+            <div class="body">[#87167974]
+</div>
+            <div class="author">Tim Hausler and Zach Robinson</div>
+            <div class="date">Wed Feb 11 10:41:16 2015 -0800</div>
+          </details>
+      
+          <details class="commit">
+            <summary class="subject">Merge branch 'master' of https://github.com/cloudfoundry/cloud_controller_ng</summary>
+            <div class="sha">
+              <a href="https://github.com/cloudfoundry/cloud_controller_ng/commit/
+cf7f540880505f3c6cc02ad8035811b7541be199" target="_blank">
+cf7f540</a>
+
+            </div>
+            <div class="body"></div>
+            <div class="author">Glen Tona, Jeff Hui and Michael Maximilien</div>
+            <div class="date">Wed Feb 11 17:03:52 2015 -0800</div>
+          </details>
+      
+          <details class="commit">
+            <summary class="subject">Implements async deprovision (happy path)</summary>
+            <div class="sha">
+              <a href="https://github.com/cloudfoundry/cloud_controller_ng/commit/
+990dad325a66ced27cf8ac36e09ae1b2e48b8d65" target="_blank">
+990dad3</a>
+
+            </div>
+            <div class="body">[finishes #87584128]
+</div>
+            <div class="author">Glen Tona, Jeff Hui and Michael Maximilien</div>
+            <div class="date">Wed Feb 11 17:02:48 2015 -0800</div>
+          </details>
+      
+          <details class="commit">
+            <summary class="subject">Avoid large query when logging auth errors</summary>
+            <div class="sha">
+              <a href="https://github.com/cloudfoundry/cloud_controller_ng/commit/
+51c941e0512efc599708d2c3e93b53cfaef33894" target="_blank">
+51c941e</a>
+
+            </div>
+            <div class="body"></div>
+            <div class="author">Sujoy Basu and Serguei Filimonov</div>
+            <div class="date">Wed Feb 11 12:20:15 2015 -0800</div>
+          </details>
+      
+          <details class="commit">
+            <summary class="subject">Send stack name with staging and start messages</summary>
+            <div class="sha">
+              <a href="https://github.com/cloudfoundry/cloud_controller_ng/commit/
+4be958dd10e79bf4534dec12e85f981074538720" target="_blank">
+4be958d</a>
+
+            </div>
+            <div class="body">[#87752470]
+</div>
+            <div class="author">Chris Piraino and Dan Lavine</div>
+            <div class="date">Wed Feb 11 11:11:10 2015 -0800</div>
+          </details>
+      
+          <details class="commit">
+            <summary class="subject">rename container_file_descriptor_limit -> instance_file_descriptor_limit</summary>
+            <div class="sha">
+              <a href="https://github.com/cloudfoundry/cloud_controller_ng/commit/
+db612c145aaf299bd10dac1f3b10a6be82fc3bdf" target="_blank">
+db612c1</a>
+
+            </div>
+            <div class="body"></div>
+            <div class="author">Zach Robinson</div>
+            <div class="date">Tue Feb 10 14:13:43 2015 -0800</div>
+          </details>
+      
+          <details class="commit">
+            <summary class="subject">Merge remote-tracking branch 'origin/pr/323'</summary>
+            <div class="sha">
+              <a href="https://github.com/cloudfoundry/cloud_controller_ng/commit/
+dee1a01e1dc5bbec069984618031260ec0a1374a" target="_blank">
+dee1a01</a>
+
+            </div>
+            <div class="body"></div>
+            <div class="author">Zach Robinson</div>
+            <div class="date">Tue Feb 10 14:14:23 2015 -0800</div>
+          </details>
+      
+          <details class="commit">
+            <summary class="subject">CC correctly handles when broker requires async deprovision.</summary>
+            <div class="sha">
+              <a href="https://github.com/cloudfoundry/cloud_controller_ng/commit/
+eedb5ef926faf613b88c873b327429e4a552fe11" target="_blank">
+eedb5ef</a>
+
+            </div>
+            <div class="body">[Finishes #87655290]
+</div>
+            <div class="author">Jeff Hui and Michael Maximilien</div>
+            <div class="date">Tue Feb 10 11:46:56 2015 -0800</div>
+          </details>
+      
+          <details class="commit">
+            <summary class="subject">Added validation of operation state for deprovision request.</summary>
+            <div class="sha">
+              <a href="https://github.com/cloudfoundry/cloud_controller_ng/commit/
+855a2278b8fb5c0d5ef480b6734b18587662a006" target="_blank">
+855a227</a>
+
+            </div>
+            <div class="body">Moved parse_deprovision_or_unbind below parse_provision_or_bind
+
+[#87584130]
+</div>
+            <div class="author">Jeff Hui and Michael Maximilien</div>
+            <div class="date">Tue Feb 10 10:51:05 2015 -0800</div>
+          </details>
+      
+          <details class="commit">
+            <summary class="subject">Allow admins to create wildcard routes</summary>
+            <div class="sha">
+              <a href="https://github.com/cloudfoundry/cloud_controller_ng/commit/
+a6dcc9b5a7dd9af587838279a630d8d42c731572" target="_blank">
+a6dcc9b</a>
+
+            </div>
+            <div class="body">[#84533566]
+</div>
+            <div class="author">Luan Santos and Sujoy Basu</div>
+            <div class="date">Tue Feb 10 10:18:05 2015 -0800</div>
+          </details>
+      
+          <details class="commit">
+            <summary class="subject">Request instance state when broker return state 'in progress' for update request</summary>
+            <div class="sha">
+              <a href="https://github.com/cloudfoundry/cloud_controller_ng/commit/
+f87caf50839cd15e56beaffd9e7da9f37a26d493" target="_blank">
+f87caf5</a>
+
+            </div>
+            <div class="body">[finishes #86584080]
+</div>
+            <div class="author">David Sabeti and Glen Tona</div>
+            <div class="date">Tue Feb 10 10:11:28 2015 -0800</div>
+          </details>
+      
+          <details class="commit">
+            <summary class="subject">Setup logging properly on CC worker and clock jobs</summary>
+            <div class="sha">
+              <a href="https://github.com/cloudfoundry/cloud_controller_ng/commit/
+83e83cbcbb36d4668ef8a9f317feb73ae5d6de2f" target="_blank">
+83e83cb</a>
+
+            </div>
+            <div class="body">[#76069390]
+</div>
+            <div class="author">Luan Santos</div>
+            <div class="date">Tue Feb 10 09:41:11 2015 -0800</div>
+          </details>
+      
+          <details class="commit">
+            <summary class="subject">Record last operation state when update request fails</summary>
+            <div class="sha">
+              <a href="https://github.com/cloudfoundry/cloud_controller_ng/commit/
+51302309287d8cd6679f237b4e7fd58492209c18" target="_blank">
+5130230</a>
+
+            </div>
+            <div class="body"></div>
+            <div class="author">David Sabeti and Glen Tona</div>
+            <div class="date">Mon Feb 9 18:12:53 2015 -0800</div>
+          </details>
+      
+          <details class="commit">
+            <summary class="subject">Move logic from service_instance_controller to client</summary>
+            <div class="sha">
+              <a href="https://github.com/cloudfoundry/cloud_controller_ng/commit/
+d8ff06882f04bfa5c914a62cc9996eb6b0e561d4" target="_blank">
+d8ff068</a>
+
+            </div>
+            <div class="body"></div>
+            <div class="author">David Sabeti and Glen Tona</div>
+            <div class="date">Mon Feb 9 16:11:57 2015 -0800</div>
+          </details>
+      
+          <details class="commit">
+            <summary class="subject">Remove dead code in user_provided_service_instances_controller</summary>
+            <div class="sha">
+              <a href="https://github.com/cloudfoundry/cloud_controller_ng/commit/
+c9192eb50a99027abef63ae26f40dc19421d9234" target="_blank">
+c9192eb</a>
+
+            </div>
+            <div class="body">user provided service instance do not have service_plans. This code will never be executed
+</div>
+            <div class="author">David Sabeti</div>
+            <div class="date">Mon Feb 9 14:34:19 2015 -0800</div>
+          </details>
+      
+          <details class="commit">
+            <summary class="subject">Configurable file_descriptors limit for warden container</summary>
+            <div class="sha">
+              <a href="https://github.com/cloudfoundry/cloud_controller_ng/commit/
+2f3953362d7b9374e1c66b99422e29ef0f57ab91" target="_blank">
+2f39533</a>
+
+            </div>
+            <div class="body">file_descriptors for a warden container is made configurable through
+deployment manifest.
+Currently the default is 16384 which is read from the database table
+and is not configurable. To configure, cf operator needs to add the
+following config variable under cc
+cc:
+  container_file_descriptor_limit: 4096
+
+[#82011156]
+</div>
+            <div class="author">shashidharatd</div>
+            <div class="date">Mon Dec 29 18:54:12 2014 +0530</div>
+          </details>
+      
+  
+</details>
+
+
+    <details>
+  <summary><h2><a href="https://github.com/cloudfoundry/collector/commits/ffea2b49176878d0d1284c3d6d0ccddc1053738d" target="_blank">src/collector</a>
+    (0 commits)</h2></summary>
+
+  <H3><a href="https://github.com/cloudfoundry/collector/commit/ffea2b49176878d0d1284c3d6d0ccddc1053738d"
+         target="_blank">ffea2b49</a>..<a href="https://github.com/cloudfoundry/collector/commit/ffea2b49176878d0d1284c3d6d0ccddc1053738d"
+           target="_blank">ffea2b49</a>
+    (<a href="https://github.com/cloudfoundry/collector/compare/ffea2b49176878d0d1284c3d6d0ccddc1053738d...ffea2b49176878d0d1284c3d6d0ccddc1053738d" target="_blank">compare</a>)
+ </H3>
+
+  
+      <div class="no-changes">No Commits</div>
+  
+</details>
+
+
+    <details>
+  <summary><h2><a href="https://github.com/cloudfoundry/shared-release-packages/commits/b94178574de4f47c17b34a3cd3618942306ba7a4" target="_blank">shared</a>
+    (0 commits)</h2></summary>
+
+  <H3><a href="https://github.com/cloudfoundry/shared-release-packages/commit/b94178574de4f47c17b34a3cd3618942306ba7a4"
+         target="_blank">b9417857</a>..<a href="https://github.com/cloudfoundry/shared-release-packages/commit/b94178574de4f47c17b34a3cd3618942306ba7a4"
+           target="_blank">b9417857</a>
+    (<a href="https://github.com/cloudfoundry/shared-release-packages/compare/b94178574de4f47c17b34a3cd3618942306ba7a4...b94178574de4f47c17b34a3cd3618942306ba7a4" target="_blank">compare</a>)
+ </H3>
+
+  
+      <div class="no-changes">No Commits</div>
+  
+</details>
+
+
+    <details>
+  <summary><h2><a href="https://github.com/cloudfoundry/hm-workspace/commits/596ca8cd97a6a7391bd927ede4c2c89c6a775fe1" target="_blank">src/hm9000</a>
+    (0 commits)</h2></summary>
+
+  <H3><a href="https://github.com/cloudfoundry/hm-workspace/commit/596ca8cd97a6a7391bd927ede4c2c89c6a775fe1"
+         target="_blank">596ca8cd</a>..<a href="https://github.com/cloudfoundry/hm-workspace/commit/596ca8cd97a6a7391bd927ede4c2c89c6a775fe1"
+           target="_blank">596ca8cd</a>
+    (<a href="https://github.com/cloudfoundry/hm-workspace/compare/596ca8cd97a6a7391bd927ede4c2c89c6a775fe1...596ca8cd97a6a7391bd927ede4c2c89c6a775fe1" target="_blank">compare</a>)
+ </H3>
+
+  
+      <div class="no-changes">No Commits</div>
+  
+</details>
+
+
+    <details>
+  <summary><h2><a href="https://github.com/apcera/gnatsd/commits/7fb53586108b89a68d3db9ad2f7cf84a6842194c" target="_blank">src/gnatsd</a>
+    (0 commits)</h2></summary>
+
+  <H3><a href="https://github.com/apcera/gnatsd/commit/7fb53586108b89a68d3db9ad2f7cf84a6842194c"
+         target="_blank">7fb53586</a>..<a href="https://github.com/apcera/gnatsd/commit/7fb53586108b89a68d3db9ad2f7cf84a6842194c"
+           target="_blank">7fb53586</a>
+    (<a href="https://github.com/apcera/gnatsd/compare/7fb53586108b89a68d3db9ad2f7cf84a6842194c...7fb53586108b89a68d3db9ad2f7cf84a6842194c" target="_blank">compare</a>)
+ </H3>
+
+  
+      <div class="no-changes">No Commits</div>
+  
+</details>
+
+
+    <details>
+  <summary><h2><a href="https://github.com/cloudfoundry/loggregator/commits/7e5c78be8d981b4924f72119d1570c8d391d0b48" target="_blank">src/loggregator</a>
+    (0 commits)</h2></summary>
+
+  <H3><a href="https://github.com/cloudfoundry/loggregator/commit/7e5c78be8d981b4924f72119d1570c8d391d0b48"
+         target="_blank">7e5c78be</a>..<a href="https://github.com/cloudfoundry/loggregator/commit/7e5c78be8d981b4924f72119d1570c8d391d0b48"
+           target="_blank">7e5c78be</a>
+    (<a href="https://github.com/cloudfoundry/loggregator/compare/7e5c78be8d981b4924f72119d1570c8d391d0b48...7e5c78be8d981b4924f72119d1570c8d391d0b48" target="_blank">compare</a>)
+ </H3>
+
+  
+      <div class="no-changes">No Commits</div>
+  
+</details>
+
+
+    <details>
+  <summary><h2><a href="https://github.com/cloudfoundry/cf-acceptance-tests/commits/c4eee4bef1a52e5b45d81d1e78a14338d2a05890" target="_blank">src/acceptance-tests</a>
+    (3 commits)</h2></summary>
+
+  <H3><a href="https://github.com/cloudfoundry/cf-acceptance-tests/commit/f85b3a17555772643dde4d60952e6f44c89a9440"
+         target="_blank">f85b3a17</a>..<a href="https://github.com/cloudfoundry/cf-acceptance-tests/commit/c4eee4bef1a52e5b45d81d1e78a14338d2a05890"
+           target="_blank">c4eee4be</a>
+    (<a href="https://github.com/cloudfoundry/cf-acceptance-tests/compare/f85b3a17555772643dde4d60952e6f44c89a9440...c4eee4bef1a52e5b45d81d1e78a14338d2a05890" target="_blank">compare</a>)
+ </H3>
+
+  
+      
+          <details class="commit">
+            <summary class="subject">Update services CATS to include async update</summary>
+            <div class="sha">
+              <a href="https://github.com/cloudfoundry/cf-acceptance-tests/commit/c4eee4bef1a52e5b45d81d1e78a14338d2a05890" target="_blank">c4eee4be</a>
+
+            </div>
+            <div class="body"></div>
+            <div class="author">David Sabeti and Glen Tona</div>
+            <div class="date">Tue Feb 10 11:39:04 2015 -0800</div>
+          </details>
+      
+          <details class="commit">
+            <summary class="subject">Point v3 package upload to correct path</summary>
+            <div class="sha">
+              <a href="https://github.com/cloudfoundry/cf-acceptance-tests/commit/
+d9bae72f46ccf8a176ae430b94f600f68762b32b" target="_blank">
+d9bae72</a>
+
+            </div>
+            <div class="body"></div>
+            <div class="author">Chris Piraino and Dan Lavine</div>
+            <div class="date">Tue Feb 10 17:47:51 2015 -0800</div>
+          </details>
+      
+          <details class="commit">
+            <summary class="subject">Gofmt</summary>
+            <div class="sha">
+              <a href="https://github.com/cloudfoundry/cf-acceptance-tests/commit/
+9cec7c35bf15c69434cf4912e4624a87ec30be97" target="_blank">
+9cec7c3</a>
+
+            </div>
+            <div class="body"></div>
+            <div class="author">Chris Piraino and Dan Lavine</div>
+            <div class="date">Tue Feb 10 17:47:03 2015 -0800</div>
+          </details>
+      
+  
+</details>
+
+
+    <details>
+  <summary><h2><a href="https://github.com/cloudfoundry/ruby-package/commits/01b9b845268ba49041068bb877452ee3e242682f" target="_blank">packages/ruby</a>
+    (0 commits)</h2></summary>
+
+  <H3><a href="https://github.com/cloudfoundry/ruby-package/commit/01b9b845268ba49041068bb877452ee3e242682f"
+         target="_blank">01b9b845</a>..<a href="https://github.com/cloudfoundry/ruby-package/commit/01b9b845268ba49041068bb877452ee3e242682f"
+           target="_blank">01b9b845</a>
+    (<a href="https://github.com/cloudfoundry/ruby-package/compare/01b9b845268ba49041068bb877452ee3e242682f...01b9b845268ba49041068bb877452ee3e242682f" target="_blank">compare</a>)
+ </H3>
+
+  
+      <div class="no-changes">No Commits</div>
+  
+</details>
+
+
+    <details>
+  <summary><h2><a href="https://github.com/cloudfoundry/uaa/commits/9156eed2dcc13d8aa1198523d5ce3876e3fe61d7" target="_blank">src/uaa</a>
+    (0 commits)</h2></summary>
+
+  <H3><a href="https://github.com/cloudfoundry/uaa/commit/9156eed2dcc13d8aa1198523d5ce3876e3fe61d7"
+         target="_blank">9156eed2</a>..<a href="https://github.com/cloudfoundry/uaa/commit/9156eed2dcc13d8aa1198523d5ce3876e3fe61d7"
+           target="_blank">9156eed2</a>
+    (<a href="https://github.com/cloudfoundry/uaa/compare/9156eed2dcc13d8aa1198523d5ce3876e3fe61d7...9156eed2dcc13d8aa1198523d5ce3876e3fe61d7" target="_blank">compare</a>)
+ </H3>
+
+  
+      <div class="no-changes">No Commits</div>
+  
+</details>
+
+
+    <details>
+  <summary><h2><a href="https://github.com/cloudfoundry/login-server/commits/c4e3209c91882edae6185da5794d8a4dea02c73d" target="_blank">src/login</a>
+    (0 commits)</h2></summary>
+
+  <H3><a href="https://github.com/cloudfoundry/login-server/commit/c4e3209c91882edae6185da5794d8a4dea02c73d"
+         target="_blank">c4e3209c</a>..<a href="https://github.com/cloudfoundry/login-server/commit/c4e3209c91882edae6185da5794d8a4dea02c73d"
+           target="_blank">c4e3209c</a>
+    (<a href="https://github.com/cloudfoundry/login-server/compare/c4e3209c91882edae6185da5794d8a4dea02c73d...c4e3209c91882edae6185da5794d8a4dea02c73d" target="_blank">compare</a>)
+ </H3>
+
+  
+      <div class="no-changes">No Commits</div>
+  
+</details>
+
+
+    <details>
+  <summary><h2><a href="https://github.com/cloudfoundry-incubator/etcd-metrics-server/commits/90c444c7f93cacb998e45c46f1e06ecf4c8eb9c4" target="_blank">src/etcd-metrics-server</a>
+    (0 commits)</h2></summary>
+
+  <H3><a href="https://github.com/cloudfoundry-incubator/etcd-metrics-server/commit/90c444c7f93cacb998e45c46f1e06ecf4c8eb9c4"
+         target="_blank">90c444c7</a>..<a href="https://github.com/cloudfoundry-incubator/etcd-metrics-server/commit/90c444c7f93cacb998e45c46f1e06ecf4c8eb9c4"
+           target="_blank">90c444c7</a>
+    (<a href="https://github.com/cloudfoundry-incubator/etcd-metrics-server/compare/90c444c7f93cacb998e45c46f1e06ecf4c8eb9c4...90c444c7f93cacb998e45c46f1e06ecf4c8eb9c4" target="_blank">compare</a>)
+ </H3>
+
+  
+      <div class="no-changes">No Commits</div>
+  
+</details>
+
+
+    <details>
+  <summary><h2><a href="https://github.com/coreos/etcd/commits/49e0dff2b8529801beb09164729caf96a5b93ef0" target="_blank">src/etcd</a>
+    (0 commits)</h2></summary>
+
+  <H3><a href="https://github.com/coreos/etcd/commit/49e0dff2b8529801beb09164729caf96a5b93ef0"
+         target="_blank">49e0dff2</a>..<a href="https://github.com/coreos/etcd/commit/49e0dff2b8529801beb09164729caf96a5b93ef0"
+           target="_blank">49e0dff2</a>
+    (<a href="https://github.com/coreos/etcd/compare/49e0dff2b8529801beb09164729caf96a5b93ef0...49e0dff2b8529801beb09164729caf96a5b93ef0" target="_blank">compare</a>)
+ </H3>
+
+  
+      <div class="no-changes">No Commits</div>
+  
+</details>
+
+
+    <details>
+  <summary><h2><a href="https://github.com/cloudfoundry/cf-smoke-tests/commits/7bf75b9069aa8d75909c6a9fcc8293213ebdec1d" target="_blank">src/smoke-tests</a>
+    (0 commits)</h2></summary>
+
+  <H3><a href="https://github.com/cloudfoundry/cf-smoke-tests/commit/7bf75b9069aa8d75909c6a9fcc8293213ebdec1d"
+         target="_blank">7bf75b90</a>..<a href="https://github.com/cloudfoundry/cf-smoke-tests/commit/7bf75b9069aa8d75909c6a9fcc8293213ebdec1d"
+           target="_blank">7bf75b90</a>
+    (<a href="https://github.com/cloudfoundry/cf-smoke-tests/compare/7bf75b9069aa8d75909c6a9fcc8293213ebdec1d...7bf75b9069aa8d75909c6a9fcc8293213ebdec1d" target="_blank">compare</a>)
+ </H3>
+
+  
+      <div class="no-changes">No Commits</div>
+  
+</details>
+
+
+    <details>
+  <summary><h2><a href="https://github.com/cloudfoundry/ruby-package/commits/5f852875676b174ed17d1e52f7ccf960ce7b284f" target="_blank">packages/ruby-2.1.4</a>
+    (0 commits)</h2></summary>
+
+  <H3><a href="https://github.com/cloudfoundry/ruby-package/commit/5f852875676b174ed17d1e52f7ccf960ce7b284f"
+         target="_blank">5f852875</a>..<a href="https://github.com/cloudfoundry/ruby-package/commit/5f852875676b174ed17d1e52f7ccf960ce7b284f"
+           target="_blank">5f852875</a>
+    (<a href="https://github.com/cloudfoundry/ruby-package/compare/5f852875676b174ed17d1e52f7ccf960ce7b284f...5f852875676b174ed17d1e52f7ccf960ce7b284f" target="_blank">compare</a>)
+ </H3>
+
+  
+      <div class="no-changes">No Commits</div>
+  
+</details>
+
+
+</body>
+</html>
