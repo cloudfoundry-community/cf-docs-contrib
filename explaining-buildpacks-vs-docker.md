@@ -16,15 +16,13 @@ This doc aims at helping describe use-caes for pushing docker images vs pushing 
 # buildpack limitations
 
 * does not work well on desktop computers:
-   * lattie still too different from CF CLI
-   * bosh-lite install still cumbersome to install + hard to have marketplace services locally run out of the bod
+   * lattice UX is too different from CF CLI UX
+   * CF installation on local box (bosh-lite) still heavy and requires bosh skills
+      * + hard to have marketplace services locally run out of the bod
 * buildpacks not by default portable among stacks/slugs (no yet centralized/mutualized support for such portability)
 * apps staged by buildpacks are not natively portable to other infrastructures than CF (e.g. mesos, K8S, raw Iaas)
-* slow to reapply/account for source changed (in the +20s)
-* experience of development on local machine (possibly offline) isn't yet great:
-   * lattice UX is different from CF UX
-   * CF installation on local box (bosh-lite) still heavy and requires bosh skills
-* lacking buit-in the live reload experience (that docker enables through mounting sources in volumes)
+* lack native live reload: slow to reapply/account for source changes (in the +20s)
+   * native docker run may enable such use-cases through mounting sources into volume.
 
 # Use cases in cloudfoundry 
 
