@@ -30,4 +30,4 @@ When to push docker images vs app bit through buildpack in cloudfoundry ?
 
 Depends on the application context, and who is responsible for pushing/operating the app (sometimes called "responsible for the endpoint CI process").
 * if ops are responsible for pushing/operating the app, then buildpacks make a nice separation of concerns
-* if the developers are responsible for pushing/operating the app, then pushing docker images may provide them more control over buildpacks.
+* if the developers are responsible for pushing/operating the app, then pushing docker images may provide them more control over buildpacks, if they're willing to handle the building of they docker image and its maintenance.
