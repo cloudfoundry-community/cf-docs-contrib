@@ -1,4 +1,4 @@
-
+This page contains notes from the cf summit berlin 2005 unconference session on how to improve CF w.r.t. use-cases supported by docker orchestration systems. First by identifying areas where CF is not yet strong at, and there sharing ideas how to fix it and make it stronger.
 
 # CF weaknesses/limitations over docker orchestrations ?
 
@@ -11,6 +11,8 @@
 * limited marketplace (w.r.t. docker hub available images) and limited community contributing to it.
 
 # How can we improve CF to fix these limitations ?
+
+This 
 
 * developer experience does not support offline work
    * => improve packaging of CF to make it affordeable to run on desktop (lattice, bosh-lite ?)
