@@ -8,7 +8,7 @@
 * high bar to become data service providers:
    * need to turn into platform operations (learning bosh, owning a bosh instance)
 * limited app eligibility (e.g. advanced networking such as multi-cast/broadcast networking used in hazelcast client)
-* limited marketplace (w.r.t. docker hub available images) and community contributing to it.
+* limited marketplace (w.r.t. docker hub available images) and limited community contributing to it.
 
 # How can we improve CF to fix these limitations ?
 
