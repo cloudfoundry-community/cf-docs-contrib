@@ -23,7 +23,7 @@ This
 * high bar to become data service providers:
    * need to turn into platform operations (learning bosh, owning a bosh instance)
    * => See https://github.com/cloudfoundry-community/cf-docs-contrib/blob/master/ways-to-implement-data-services.md
-      * contribute improvements to https://github.com/cf-platform-eng/docker-boshrelease/
+      * contribute improvements to https://github.com/cloudfoundry-community/cf-containers-broker
          * accept docker images are service instance params (to enable wider contributor base)
          * add declarative storage requirements (whether the images needs a storage, which reqs for this storage) e.g. implemented through:
             * dynamically instanciated bosh release (docker host + associated volumes dedicated to services)
