@@ -1,3 +1,5 @@
+Please see https://www.cloudfoundry.org/projects/ for project information previously found in the wiki.
+
 cf-docs-contrib
 ===============
 
